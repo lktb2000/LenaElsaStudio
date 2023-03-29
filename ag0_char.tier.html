@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>鶴姬重工┃Taiwan Games DataBase</title>
+    <title>《機動戰姬：聚變》角色強度排行┃鶴姬重工┃Taiwan Games DataBase</title>
     <link href="./css/normal.css" rel="stylesheet" />
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./js/master.css.js"></script>
@@ -26,8 +26,8 @@
         <section id="app" class="p:0|10|10">
           <div
             class="min-h:calc(100vh-90px) p:20|20|70 p:40@sm bg:fade-88 bg:fade-24@dark r:8"
-          ><div class="hide">
-            <div class="grid-cols:3 gap:10">
+          >
+            <div class="hide grid-cols:3 gap:10">
               <div class="grid-col-span:3">
                 <h3 class="f:bold f:20 f:white">表格標頭底色</h3>
                 <div class="rel">
@@ -105,70 +105,88 @@
                   <div class="abs top:1/2 right:10 w:30 h:30 translateY(-50%)" :class="`bg:${colors.r}`"></div>
                 </div>
               </div>
-            </div>
+            
           </div>
-            <h2 class="mb:10 f:24 f:32@sm f:fade-42 f:white@dark">角色強度</h2>
+            <h2 class="mb:10 f:24 f:32@sm f:fade-42 f:white@dark">角色強度排行</h2>
             <div
-              class="overflow-x:auto {h:4;rounded}::scrollbar {bg:fade-84;rounded}::scrollbar-thumb bg:fade-40::scrollbar-thumb@dark bg:fade-80::scrollbar-thumb:hover bg:fade-48::scrollbar-thumb:hover@dark"
+              class="
+                overflow-x:auto
+                {h:4;rounded}::scrollbar
+                {bg:fade-84;rounded}::scrollbar-thumb bg:fade-40::scrollbar-thumb@dark bg:fade-80::scrollbar-thumb:hover bg:fade-48::scrollbar-thumb:hover@dark"
             >
 
-              <table
-                 class="w:full min-w:900 t:center border-collapse:collapse table-layout:fixed {p:12|8;lh:1.25;b:1|solid|fade-24}_thead_th {p:0;b:1|solid|fade-24}_td"
-                :class="[`bg:${colors.header}_.header`,`bg:${colors.ssr}_.ssr`,`bg:${colors.sr}_.sr`,`bg:${colors.r}_.r`,`bg:${colors.ssrHeader}_.ssr-header`,`bg:${colors.srHeader}_.sr-header`,`bg:${colors.rHeader}_.r-header`]"
+            <div grid-cols:1>
+              <div class="box:clone bg:linear-gradient(to|right,#eeaeca,#94bbe9) f:black r:8 p:4|8 lh:1.8 f:18 ">
+                <span class="opacity:.9:hover">註解</span>
+              </div>
+            </div>
+
+          <br>
+
+            <table
+              class="
+              w:full
+              min-w:900
+              t:center
+              border-collapse:collapse
+              table-layout:fixed
+              {p:12|8;lh:1.25;b:1|solid|fade-24}_thead_th
+              {p:10;b:1|solid|fade-24}_td
+              {p:0}_td:nth(2)
+              {p:0}_td:nth(4)
+              {f:bolder}_td:nth(3)"
+              :class="[`bg:${colors.header}_.header`,`bg:${colors.ssr}_.ssr`,`bg:${colors.sr}_.sr`,`bg:${colors.r}_.r`,`bg:${colors.ssrHeader}_.ssr-header`,`bg:${colors.srHeader}_.sr-header`,`bg:${colors.rHeader}_.r-header`]"
             >
               <colgroup>
-                <col span="1" style="width:55px;">
-                <col span="1" style="width:75px;padding: 25px;">
+                <col span="1" style="width:60px;">
+                <col span="1" style="width:75px;">
                 <col span="1" style="width:165px;">
                 <col span="1" style="width:50px;">
                 <col span="1" style="width:155px;">
                 <col span="3" style="width:55px;">
-                <col span="1" style="margin: 25px !important;" class="p:10">
+                <col span="1" style="width:65px;">
+                <col span="1" style="">
               </colgroup>
-                <thead>
-                  <tr class="header">
-                    <th>分數評級</th>
-                    <th>頭像</th>
-                    <th>角色</th>
-                    <th>角色類型</th>
-                    <th>招募類型</th>
-                    <th>拓荒</th>
-                    <th>總力挑戰</th>
-                    <th>PvP</th>
-                    <th>簡評</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="ssr">
-                    <td class="ssr-header">10.999</td>
-                    <td class="ssr-header"><img src="./img/arterygear/char_portrait/spr_AGsmallcard_10000001.png" style="width:165px;"></td>
-                    <td class="ssr">科洛蒂婭．巴蘭茨</td>
-                    <td class="ssr"><img src="./img/arterygear/Icon/drxx_icon_profession_2_1.png"></td>
-                    <td class="ssr">萊莎的煉金工房<br>進階招募</td>
-                    <td class="ssr">SS</td>
-                    <td class="ssr">SS</td>
-                    <td class="ssr">SS</td>
-                    <td class="ssr">泡影：持續期間不會死亡，受到攻擊後若自身生命值為1，則解除泡影狀態，恢復自身20%生命值並使用普通攻擊對敵人進行追加攻擊。</td>
-                  </tr>
-                </tbody>
+              <thead>
+                <tr class="header">
+                  <th>分數評級</th>
+                  <th>頭像</th>
+                  <th>角色</th>
+                  <th>類型</th>
+                  <th>招募類別</th>
+                  <th>拓荒</th>
+                  <th>總力挑戰</th>
+                  <th>PvP</th>
+                  <th>資料鏈</th>
+                  <th>簡評</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="ssr">
+                  <td class="ssr-header">10.99</td>
+                  <td class="ssr-header"><img src="./img/arterygear/char_portrait/spr_AGsmallcard_10000001.png" style="width:165px;"></td>
+                  <td class="ssr">科洛蒂婭．巴蘭茨</td>
+                  <td class="ssr"><img src="./img/arterygear/Icon/drxx_icon_profession_2_1.png"></td>
+                  <td class="ssr">萊莎的煉金工房<br>進階招募</td>
+                  <td class="ssr">SS</td>
+                  <td class="ssr">SS</td>
+                  <td class="ssr">SS</td>
+                  <td class="ssr">SS</td>
+                  <td class="ssr">泡影：持續期間不會死亡，受到攻擊後若自身生命值為1，則解除泡影狀態，恢復自身20%生命值並使用普通攻擊對敵人進行追加攻擊。</td>
+                </tr>
+              </tbody>
+            </table>  
 
-
-              
-
-              </table>  
-
-              <br>
+            <br>
             
               <table
                 class="w:full min-w:900 t:center border-collapse:collapse table-layout:fixed {p:16|10;lh:1.25;b:1|solid|fade-24}_thead_th {p:10;b:1|solid|fade-24}_td"
                 :class="[`bg:${colors.header}_.header`,`bg:${colors.ssr}_.ssr`,`bg:${colors.sr}_.sr`,`bg:${colors.r}_.r`,`bg:${colors.ssrHeader}_.ssr-header`,`bg:${colors.srHeader}_.sr-header`,`bg:${colors.rHeader}_.r-header`]"
               >
-              <colgroup>
-                <col span="1" class="p:10">
-              </colgroup>
-
                 <thead>
-                  <th style="background-color: bisque;" colspan="21">T1</th>
+                  <tr class="bg:linear-gradient(to|right,#eeaeca,#94bbe9)">
+                    <th colspan="21">T1</th>
+                  </tr>
                   <tr class="header">
                     <th>頭像</th>
                     <th>AG</th>
@@ -220,6 +238,98 @@
                   <tr class="sr">
                     <td class="sr-header"></td>
                     <td class="sr-header">特斐爾</td>
+                    <td>初始</td>
+                    <td></td>
+                    <td>8507</td>
+                    <td>102</td>
+                    <td>1109</td>
+                    <td>754</td>
+                    <td>12%</td>
+                    <td>150%</td>
+                    <td>0%</td>
+                    <td>0%</td>
+                    <td>159.0%</td>
+                    <td></td>
+                    <td>178.1%</td>
+                    <td>恢復生命</td>
+                    <td>攻擊力疊加</td>
+                    <td>攻擊力上升<br />暈眩</td>
+                    <td>防禦</td>
+                    <td>攻擊</td>
+                    <td></td>
+                  </tr>
+                  <tr class="r">
+                    <td class="r-header"></td>
+                    <td class="r-header">特斐爾</td>
+                    <td>初始</td>
+                    <td></td>
+                    <td>8507</td>
+                    <td>102</td>
+                    <td>1109</td>
+                    <td>754</td>
+                    <td>12%</td>
+                    <td>150%</td>
+                    <td>0%</td>
+                    <td>0%</td>
+                    <td>159.0%</td>
+                    <td></td>
+                    <td>178.1%</td>
+                    <td>恢復生命</td>
+                    <td>攻擊力疊加</td>
+                    <td>攻擊力上升<br />暈眩</td>
+                    <td>防禦</td>
+                    <td>攻擊</td>
+                    <td></td>
+                  </tr>
+                  <tr class="r">
+                    <td class="r-header"></td>
+                    <td class="r-header">特斐爾</td>
+                    <td>初始</td>
+                    <td></td>
+                    <td>8507</td>
+                    <td>102</td>
+                    <td>1109</td>
+                    <td>754</td>
+                    <td>12%</td>
+                    <td>150%</td>
+                    <td>0%</td>
+                    <td>0%</td>
+                    <td>159.0%</td>
+                    <td></td>
+                    <td>178.1%</td>
+                    <td>恢復生命</td>
+                    <td>攻擊力疊加</td>
+                    <td>攻擊力上升<br />暈眩</td>
+                    <td>防禦</td>
+                    <td>攻擊</td>
+                    <td></td>
+                  </tr>
+                  <tr class="r">
+                    <td class="r-header"></td>
+                    <td class="r-header">特斐爾</td>
+                    <td>初始</td>
+                    <td></td>
+                    <td>8507</td>
+                    <td>102</td>
+                    <td>1109</td>
+                    <td>754</td>
+                    <td>12%</td>
+                    <td>150%</td>
+                    <td>0%</td>
+                    <td>0%</td>
+                    <td>159.0%</td>
+                    <td></td>
+                    <td>178.1%</td>
+                    <td>恢復生命</td>
+                    <td>攻擊力疊加</td>
+                    <td>攻擊力上升<br />暈眩</td>
+                    <td>防禦</td>
+                    <td>攻擊</td>
+                    <td></td>
+                  </tr>
+                  <tr class="r">
+                    <td class="r-header"></td>
+                    <td class="r-header">特斐爾</td>
                     <td>初始</td>
                     <td></td>
                     <td>8507</td>
