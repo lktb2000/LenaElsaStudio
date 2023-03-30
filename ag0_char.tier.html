@@ -25,9 +25,9 @@
 
         <section id="app" class="p:0|10|10">
           <div
-            class="min-h:calc(100vh-90px) p:20|20|70 p:40@sm bg:fade-88 bg:fade-24@dark r:8"
+            class="min-h:calc(100vh-90px) p:20|20|70 pt:20@sm p:40@sm bg:fade-88 bg:fade-24@dark r:8"
           >
-            <div class="hide grid-cols:3 gap:10">
+            <div class="hide grid-cols:3 gap:10">  <!-- Hide隱藏 -->
               <div class="grid-col-span:3">
                 <h3 class="f:bold f:20 f:white">表格標頭底色</h3>
                 <div class="rel">
@@ -107,17 +107,27 @@
               </div>
             
           </div>
-            <h2 class="mb:10 f:24 f:32@sm f:fade-42 f:white@dark">角色強度排行</h2>
+            <h2 class="mb:10 f:24 f:38@sm f:fade-42 f:white@dark">角色強度排行</h2>
             <div
               class="
                 overflow-x:auto
                 {h:4;rounded}::scrollbar
                 {bg:fade-84;rounded}::scrollbar-thumb bg:fade-40::scrollbar-thumb@dark bg:fade-80::scrollbar-thumb:hover bg:fade-48::scrollbar-thumb:hover@dark"
             >
-
-            <div grid-cols:1>
-              <div class="box:clone bg:linear-gradient(to|right,#eeaeca,#94bbe9) f:black r:8 p:4|8 lh:1.8 f:18 ">
-                <span class="opacity:.9:hover">註解</span>
+            <div class="grid-cols:5 gap:10 w:full">
+              <div class="w:max box box-shadow:5|5|gray-70 bg:linear-gradient(to|right,#C4E1FF,#ECFFFF) f:black r:8 p:10|16 lh:1.8 f:18 ">
+                最新更新日期：2023 03/29<br>
+                <span class="f:bolder">Tier 0</span>：PvE、PvP皆非常強勢<br>
+                <span class="f:bolder">Tier 1</span>：PvE、PvP皆非常強勢<br>
+                <span class="f:bolder">Tier 2</span>：PvE、PvP皆非常強勢<br>
+                <span class="f:bolder">Tier 3</span>：PvE、PvP皆非常強勢<br>
+              </div>
+              <div class="w:max box box-shadow:5|5|gray-70 bg:linear-gradient(to|right,#C4E1FF,#ECFFFF) f:black r:8 p:10|16 lh:1.8 f:18 ">
+                最新更新日期：2023 03/29<br>
+                <span class="f:bolder">Tier 0</span>：PvE、PvP皆非常強勢<br>
+                <span class="f:bolder">Tier 1</span>：PvE、PvP皆非常強勢<br>
+                <span class="f:bolder">Tier 2</span>：PvE、PvP皆非常強勢<br>
+                <span class="f:bolder">Tier 3</span>：PvE、PvP皆非常強勢XXX<br>
               </div>
             </div>
 
@@ -130,24 +140,35 @@
               t:center
               border-collapse:collapse
               table-layout:fixed
-              {p:12|8;lh:1.25;b:1|solid|fade-24}_thead_th
-              {p:10;b:1|solid|fade-24}_td
+              {p:8|6;lh:1.25;b:1|solid|fade-24}_thead_th
+              {p:6;b:1|solid|fade-24}_td
+              {f:bolder;f:22}_td:nth(1)
               {p:0}_td:nth(2)
+              {f:bolder}_td:nth(3)
               {p:0}_td:nth(4)
-              {f:bolder}_td:nth(3)"
+              {f:bolder}_td:nth(6)
+              {f:bolder}_td:nth(7)
+              {f:bolder}_td:nth(8)
+              {t:left}_td:nth(12)
+              "
               :class="[`bg:${colors.header}_.header`,`bg:${colors.ssr}_.ssr`,`bg:${colors.sr}_.sr`,`bg:${colors.r}_.r`,`bg:${colors.ssrHeader}_.ssr-header`,`bg:${colors.srHeader}_.sr-header`,`bg:${colors.rHeader}_.r-header`]"
             >
               <colgroup>
-                <col span="1" style="width:60px;">
-                <col span="1" style="width:75px;">
-                <col span="1" style="width:165px;">
-                <col span="1" style="width:50px;">
-                <col span="1" style="width:155px;">
-                <col span="3" style="width:55px;">
-                <col span="1" style="width:65px;">
-                <col span="1" style="">
+                <col span="1" class="w:85px">
+                <col span="1" class="w:75px">
+                <col span="1" class="w:165px">
+                <col span="1" class="w:50px">
+                <col span="1" class="w:145px">
+                <col span="3" class="w:50px">
+                <col span="1" class="w:65px">
+                <col span="1" class="w:125px">
+                <col span="1" class="w:180px">
+                <col span="1" class="w:533px">
               </colgroup>
               <thead>
+                <tr class="bg:linear-gradient(to|right,#FFC1E0,#FFBFFF,#B9B9FF,#C4E1FF) {f:32}">
+                  <th colspan="12">Tier 0</th>
+                </tr>
                 <tr class="header">
                   <th>分數評級</th>
                   <th>頭像</th>
@@ -157,25 +178,177 @@
                   <th>拓荒</th>
                   <th>總力挑戰</th>
                   <th>PvP</th>
-                  <th>資料鏈</th>
+                  <th>專武<br>優先級</th>
+                  <th>建議配裝</th>
+                  <th>建議屬性</th>
                   <th>簡評</th>
                 </tr>
               </thead>
               <tbody>
                 <tr class="ssr">
-                  <td class="ssr-header">10.99</td>
-                  <td class="ssr-header"><img src="./img/arterygear/char_portrait/spr_AGsmallcard_10000001.png" style="width:165px;"></td>
-                  <td class="ssr">科洛蒂婭．巴蘭茨</td>
-                  <td class="ssr"><img src="./img/arterygear/Icon/drxx_icon_profession_2_1.png"></td>
-                  <td class="ssr">萊莎的煉金工房<br>進階招募</td>
-                  <td class="ssr">SS</td>
-                  <td class="ssr">SS</td>
-                  <td class="ssr">SS</td>
-                  <td class="ssr">SS</td>
-                  <td class="ssr">泡影：持續期間不會死亡，受到攻擊後若自身生命值為1，則解除泡影狀態，恢復自身20%生命值並使用普通攻擊對敵人進行追加攻擊。</td>
+                  <td>10.99</td>
+                  <td><img src="./img/arterygear/char_portrait/spr_AGsmallcard_10000001.png" style="width:165px;"></td>
+                  <td>科洛蒂婭．巴蘭茨</td>
+                  <td><img src="./img/arterygear/Icon/drxx_icon_profession_2_1.png"></td>
+                  <td>萊莎的煉金工房<br>進階招募</td>
+                  <td>SS</td>
+                  <td>SS</td>
+                  <td>SS</td>
+                  <td>30↑</td>
+                  <td>暴傷(4)/暴擊(2)<br>生命/防禦/抵抗</td>
+                  <td>暴率 85% / 命中 47%<br>攻擊>暴傷>速度>生命</td>
+                  <td>泡影：持續期間不會死亡，受到攻擊後若自身生命值為1，則解除泡影狀態，恢復自身20%生命值並使用普通攻擊對敵人進行追加攻擊。</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr class="bg:linear-gradient(to|right,#FF9224,#FFF4C1) {f:32}">
+                  <th colspan="12">T1</th>
+                </tr>
+                <tr class="header">
+                  <th>分數評級</th>
+                  <th>頭像</th>
+                  <th>角色</th>
+                  <th>類型</th>
+                  <th>招募類別</th>
+                  <th>拓荒</th>
+                  <th>總力挑戰</th>
+                  <th>PvP</th>
+                  <th>專武<br>優先級</th>
+                  <th>建議配裝</th>
+                  <th>建議屬性</th>
+                  <th>簡評</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="ssr bg:linear-gradient(to|right,#FFC1E0,#FFBFFF,#B9B9FF,#C4E1FF)">
+                  <td>10.99</td>
+                  <td><img src="./img/arterygear/char_portrait/spr_AGsmallcard_10000001.png" style="width:165px;"></td>
+                  <td>科洛蒂婭．巴蘭茨</td>
+                  <td><img src="./img/arterygear/Icon/drxx_icon_profession_2_1.png"></td>
+                  <td>萊莎的煉金工房<br>進階招募</td>
+                  <td>SS</td>
+                  <td>SS</td>
+                  <td>SS</td>
+                  <td>30↑</td>
+                  <td>暴傷(4)/暴擊(2)<br>生命/防禦/抵抗</td>
+                  <td>暴率 85% / 命中 47%<br>攻擊>暴傷>速度>生命</td>
+                  <td>泡影：持續期間不會死亡，受到攻擊後若自身生命值為1，則解除泡影狀態，恢復自身20%生命值並使用普通攻擊對敵人進行追加攻擊。</td>
+                </tr>
+                <tr class="ssr">
+                  <td>10.99</td>
+                  <td><img src="./img/arterygear/char_portrait/spr_AGsmallcard_10000001.png" style="width:165px;"></td>
+                  <td>科洛蒂婭．巴蘭茨</td>
+                  <td><img src="./img/arterygear/Icon/drxx_icon_profession_2_1.png"></td>
+                  <td>萊莎的煉金工房<br>進階招募</td>
+                  <td>SS</td>
+                  <td>SS</td>
+                  <td>SS</td>
+                  <td>30↑</td>
+                  <td>暴傷(4)/暴擊(2)<br>生命/防禦/抵抗</td>
+                  <td>暴率 85% / 命中 47%<br>攻擊>暴傷>速度>生命</td>
+                  <td>泡影：持續期間不會死亡，受到攻擊後若自身生命值為1，則解除泡影狀態，恢復自身20%生命值並使用普通攻擊對敵人進行追加攻擊。</td>
+                </tr>
+                <tr class="sr">
+                  <td>10.99</td>
+                  <td><img src="./img/arterygear/char_portrait/spr_AGsmallcard_10000001.png" style="width:165px;"></td>
+                  <td>科洛蒂婭．巴蘭茨</td>
+                  <td><img src="./img/arterygear/Icon/drxx_icon_profession_2_1.png"></td>
+                  <td>萊莎的煉金工房<br>進階招募</td>
+                  <td>SS</td>
+                  <td>SS</td>
+                  <td>SS</td>
+                  <td>30↑</td>
+                  <td>暴傷(4)/暴擊(2)<br>生命/防禦/抵抗</td>
+                  <td>暴率 85% / 命中 47%<br>攻擊>暴傷>速度>生命</td>
+                  <td>泡影：持續期間不會死亡，受到攻擊後若自身生命值為1，則解除泡影狀態，恢復自身20%生命值並使用普通攻擊對敵人進行追加攻擊。</td>
+                </tr>
+                <tr class="r">
+                  <td>10.99</td>
+                  <td><img src="./img/arterygear/char_portrait/spr_AGsmallcard_10000001.png" style="width:165px;"></td>
+                  <td>科洛蒂婭．巴蘭茨</td>
+                  <td><img src="./img/arterygear/Icon/drxx_icon_profession_2_1.png"></td>
+                  <td>萊莎的煉金工房<br>進階招募</td>
+                  <td>SS</td>
+                  <td>SS</td>
+                  <td>SS</td>
+                  <td>30↑</td>
+                  <td>暴傷(4)/暴擊(2)<br>生命/防禦/抵抗</td>
+                  <td>暴率 85% / 命中 47%<br>攻擊>暴傷>速度>生命</td>
+                  <td>泡影：持續期間不會死亡，受到攻擊後若自身生命值為1，則解除泡影狀態，恢復自身20%生命值並使用普通攻擊對敵人進行追加攻擊。</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr class="bg:linear-gradient(to|right,#CA8EFF,#FFD0FF) {f:32}">
+                  <th colspan="12">T2</th>
+                </tr>
+                <tr class="header">
+                  <th>分數評級</th>
+                  <th>頭像</th>
+                  <th>角色</th>
+                  <th>類型</th>
+                  <th>招募類別</th>
+                  <th>拓荒</th>
+                  <th>總力挑戰</th>
+                  <th>PvP</th>
+                  <th>專武<br>優先級</th>
+                  <th>建議配裝</th>
+                  <th>建議屬性</th>
+                  <th>簡評</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="sr">
+                  <td>10.99</td>
+                  <td><img src="./img/arterygear/char_portrait/spr_AGsmallcard_10000001.png" style="width:165px;"></td>
+                  <td>科洛蒂婭．巴蘭茨</td>
+                  <td><img src="./img/arterygear/Icon/drxx_icon_profession_2_1.png"></td>
+                  <td>萊莎的煉金工房<br>進階招募</td>
+                  <td>SS</td>
+                  <td>SS</td>
+                  <td>SS</td>
+                  <td>30↑</td>
+                  <td>暴傷(4)/暴擊(2)<br>生命/防禦/抵抗</td>
+                  <td>暴率 85% / 命中 47%<br>攻擊>暴傷>速度>生命</td>
+                  <td>泡影：持續期間不會死亡，受到攻擊後若自身生命值為1，則解除泡影狀態，恢復自身20%生命值並使用普通攻擊對敵人進行追加攻擊。</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr class="bg:linear-gradient(to|right,#84C1FF,#D9FFFF) {f:32}">
+                  <th colspan="12">T3</th>
+                </tr>
+                <tr class="header">
+                  <th>分數評級</th>
+                  <th>頭像</th>
+                  <th>角色</th>
+                  <th>類型</th>
+                  <th>招募類別</th>
+                  <th>拓荒</th>
+                  <th>總力挑戰</th>
+                  <th>PvP</th>
+                  <th>專武<br>優先級</th>
+                  <th>建議配裝</th>
+                  <th>建議屬性</th>
+                  <th>簡評</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="r">
+                  <td>10.99</td>
+                  <td><img src="./img/arterygear/char_portrait/spr_AGsmallcard_10000001.png" style="width:165px;"></td>
+                  <td>科洛蒂婭．巴蘭茨</td>
+                  <td><img src="./img/arterygear/Icon/drxx_icon_profession_2_1.png"></td>
+                  <td>萊莎的煉金工房<br>進階招募</td>
+                  <td>SS</td>
+                  <td>SS</td>
+                  <td>SS</td>
+                  <td>30↑</td>
+                  <td>暴傷(4)/暴擊(2)<br>生命/防禦/抵抗</td>
+                  <td>暴率 85% / 命中 47%<br>攻擊>暴傷>速度>生命</td>
+                  <td>泡影：持續期間不會死亡，受到攻擊後若自身生命值為1，則解除泡影狀態，恢復自身20%生命值並使用普通攻擊對敵人進行追加攻擊。</td>
                 </tr>
               </tbody>
             </table>  
+            
 
             <br>
             
@@ -410,11 +583,11 @@
             colors: {
               header:'#ffcf4f',
               ssr: "#fff2cc",
-              sr: "#d9d2e9",
-              r: "#c9daf8",
+              sr: "#F1E1FF",
+              r: "#D2E9FF",
               'ssrHeader':'#ffe599',
-              'srHeader':'#b4a7d6',
-              'rHeader':'#a4c2f4',
+              'srHeader':'#DCB5FF',
+              'rHeader':'#ACD6FF',
             },
           };
         },
