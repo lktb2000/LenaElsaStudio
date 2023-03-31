@@ -25,7 +25,7 @@
 
         <section id="app" class="p:0|10|10">
           <div
-            class="min-h:calc(100vh-90px) p:20|20|70 pt:20@sm p:40@sm bg:fade-88 bg:fade-24@dark r:8"
+            class="min-h:calc(100vh-90px) p:20|20|70 pt:20@sm p:40@sm bg:fade-88 bg:url('/LenaElsaStudio/img/home/main_background.jpg')@dark r:8"
           >
             <div class="hide grid-cols:3 gap:10">  <!-- Hide隱藏 -->
               <div class="grid-col-span:3">
@@ -114,22 +114,36 @@
                 {h:4;rounded}::scrollbar
                 {bg:fade-84;rounded}::scrollbar-thumb bg:fade-40::scrollbar-thumb@dark bg:fade-80::scrollbar-thumb:hover bg:fade-48::scrollbar-thumb:hover@dark"
             >
-            <div class="grid-cols:2 w:max">
-              <div class="w:max h:max box mr:15 box-shadow:4|3|3|gray-70 bg:linear-gradient(to|right,#C4E1FF,#ECFFFF) f:black r:8 p:10|16 lh:1.8 f:18 ">
-                最新更新日期：2023 03/29<br>
-                <span class="f:bolder">Tier 0</span>：PvE、PvP皆非常強勢<br>
-                <span class="f:bolder">Tier 1</span>：PvE、PvP皆非常強勢<br>
-                <span class="f:bolder">Tier 2</span>：PvE、PvP皆非常強勢<br>
-                <span class="f:bolder">Tier 3</span>：PvE、PvP皆非常強勢<br>
-              </div>
+            <table>
+              <tr>
+                <td>
+                  <div class="w:max h:max box mr:15 box-shadow:4|3|3|gray-70 bg:linear-gradient(to|right,#C4E1FF,#ECFFFF) f:black r:8 p:10|16 lh:1.8 f:18 bg:white">
+                    <span class="f:bolder f:#FFE153 text-shadow:2|2|4|black">SS</span>：非常強勢，且無可取代<br>
+                    <span class="f:bolder f:#FF9797 text-shadow:2|2|4|black">S</span>：強勢，且經常選用<br>
+                    <span class="f:bolder f:#ACD6FF text-shadow:2|2|4|black">A</span>：好用，視情況選用<br>
+                    <span class="f:bolder f:#BBFFBB text-shadow:2|2|4|black">B</span>：弱勢，幾乎不使用
+                  </div>
+                </td>
+                <td>
+                  <div class="w:max h:max box mr:15 box-shadow:4|3|3|gray-70 bg:linear-gradient(to|right,#C4E1FF,#ECFFFF) f:black r:8 p:10|16 lh:1.8 f:18 bg:white">
+                    <span class="f:bolder f:#FFE153 text-shadow:2|2|4|black">SS</span>：非常強勢，且無可取代<br>
+                    <span class="f:bolder f:#FF9797 text-shadow:2|2|4|black">S</span>：強勢，且經常選用<br>
+                    <span class="f:bolder f:#ACD6FF text-shadow:2|2|4|black">A</span>：好用，視情況選用<br>
+                    <span class="f:bolder f:#BBFFBB text-shadow:2|2|4|black">B</span>：弱勢，幾乎不使用
+                  </div>
+                </td>
+              </tr>
+            </table>
+
+            <div class="grid-cols:3 w:900 mb:6">
               <div class="w:max h:max box  mr:15 box-shadow:4|3|3|gray-70 bg:linear-gradient(to|right,#C4E1FF,#ECFFFF) f:black r:8 p:10|16 lh:1.8 f:18 ">
-                最新更新日期：2023 03/29<br>
-                <span class="f:bolder f:#FFE153 text-shadow:0|0|5|black">SS</span>：PvE、PvP皆非常強勢<br>
-                <span class="f:bolder f:#FF9797 text-shadow:0|0|5|black">S</span>：PvE、PvP皆非常強勢<br>
-                <span class="f:bolder f:#ACD6FF text-shadow:0|0|5|black">A</span>：PvE、PvP皆非常強勢<br>
-                <span class="f:bolder f:#BBFFBB text-shadow:0|0|5|black">B</span>：PvE、PvP皆非常強勢XXX<br>
+                最新更新日期：2023 03/29
+              </div>
+              <div class="bg:url(/LenaElsaStudio/img/home/main_background.jpg)">
+                TEST BG
               </div>
             </div>
+          </div>
 
           <br>
 
@@ -202,8 +216,8 @@
                 </tr>
               </tbody>
               <thead>
-                <tr class="bg:linear-gradient(to|right,#FF9224,#FFF4C1) {f:32}">
-                  <th colspan="12">T1</th>
+                <tr class="bg:linear-gradient(to|right,#FFA042,#FFF4C1) {f:32}">
+                  <th colspan="12">Tier 1</th>
                 </tr>
                 <tr class="header">
                   <th>分數評級</th>
@@ -280,7 +294,7 @@
               </tbody>
               <thead>
                 <tr class="bg:linear-gradient(to|right,#CA8EFF,#FFD0FF) {f:32}">
-                  <th colspan="12">T2</th>
+                  <th colspan="12">Tier 2</th>
                 </tr>
                 <tr class="header">
                   <th>分數評級</th>
@@ -315,7 +329,7 @@
               </tbody>
               <thead>
                 <tr class="bg:linear-gradient(to|right,#84C1FF,#D9FFFF) {f:32}">
-                  <th colspan="12">T3</th>
+                  <th colspan="12">Tier 3</th>
                 </tr>
                 <tr class="header">
                   <th>分數評級</th>
