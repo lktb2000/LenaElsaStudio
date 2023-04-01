@@ -10,16 +10,16 @@
     <script src="./js/app.js"></script>
   </head>
   <body class="bg:fade-90 bg:fade-18@dark
-    {w:6;h:6;rounded}::scrollbar
-    bg:fade-86::scrollbar-thumb
-    bg:fade-76::scrollbar-thumb:hover
-    bg:fade-66::scrollbar-thumb:active
+    {w:8;h:6;rounded}::scrollbar
+    bg:fade-66::scrollbar-thumb
+    bg:fade-56::scrollbar-thumb:hover
+    bg:fade-36::scrollbar-thumb:active
     bg:gray-30::scrollbar-thumb@dark
     bg:gray-40::scrollbar-thumb:hover@dark
     bg:gray-50::scrollbar-thumb:active@dark
     bg:transparent::scrollbar-corner
     rounded::scrollbar-thumb
-    overflow-y:auto">
+    overflow:auto">
     <main>
       <aside
         id="menu"
@@ -32,8 +32,11 @@
           class="sticky top:0 left:0 z:998 flex gap-x:10 p:10 bg:fade-90 bg:fade-18@dark"
         ></header>
 
-        <section class="p:0|10|10">
-          <div class="rel overflow:hidden bg:fade-88 bg:fade-24@dark r:8">
+        <!-- 調整 -->
+        <section class="rel p:0|10|10">
+          <div
+            class="abs top:0 left:0 right:10 h:calc(100vh-90px) overflow:hidden bg:fade-88 bg:fade-24@dark r:8"
+          >
             <div
               class="abs inset:0 opacity:0 scale(2.5)|rotate(15deg) ~opacity|1.5s,transform|1.5s .is-loaded_{opacity:1;scale(1)|rotate(0)}"
             >
@@ -76,19 +79,15 @@
                 alt="鶴姬重工 LenaElse Studio"
               />
               <h2 class="mt:10 f:fade-42 f:white@dark f:20@sm lh:1.75 t:center">
-                資訊彙整資料庫，持續建構中。
+                專放一些雜七雜八的遊戲資料，希望可以提供給大家更完善的資料查詢環境。
               </h2>
             </div>
-
-            <!-- 轉場延遲 -->
-            <div
-              class="rel min-h:calc(100vh-90px) p:20|20|70 p:40@sm f:fade-42 f:fade-76@dark bg:fade-88 bg:fade-24@dark bg:no-repeat bg:fixed bg:100% bg:url(https://lktb2000.github.io/LenaElsaStudio//img/home/main_background_860_w.jpg) bg:url(https://lktb2000.github.io/LenaElsaStudio//img/home/main_background_860.jpg)@dark opacity:.75 invisible ~opacity|.3s,visibility|.3s .is-loaded_{opacity:1;visible;~delay:5s}" 
-            >
-              <h2 class="f:bold f:32">公告</h2>
-              <p>
-                內容<br>內容<br>內容XXX<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容XXX<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容
-              </p>
-            </div>
+          </div>
+          <div
+            class="rel min-h:calc(100vh-90px) p:20|20|70 p:40@sm f:fade-42 f:fade-76@dark bg:fade-88 bg:fade-24@dark bg:no-repeat bg:fixed bg:100% bg:url(https://lktb2000.github.io/LenaElsaStudio//img/home/main_background_860_w.jpg) bg:url(https://lktb2000.github.io/LenaElsaStudio//img/home/main_background_860.jpg)@dark opacity:0 invisible ~opacity|.3s,visibility|.3s .is-loaded_{opacity:1;visible;~delay:3s}"
+          >
+            <h2 class="f:bold f:32">公告</h2>
+            <p>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br>內容<br></p>
           </div>
         </section>
       </article>
