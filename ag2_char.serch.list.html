@@ -8,6 +8,7 @@
     <link href="./css/normal.css" rel="stylesheet" />
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./js/master.css.js"></script>
+    <script src="./js/syncscroll.js"></script>
     <script src="./js/app.js"></script>
   </head>
   <style>
@@ -150,6 +151,57 @@
             
           </div>
             <h2 class="mb:10 f:24 f:38@sm f:fade-42 f:white@dark">角色速查</h2>
+            <div class="sticky top:20 left:0">
+              <div class="syncscroll overflow-x:hidden" name="table-1">
+                <table
+                  class="
+                  w:full
+                  min-w:900
+                  t:center
+                  border-collapse:collapse
+                  table-layout:fixed
+                  {p:8|6;lh:1.25;b:1|solid|fade-24}_thead_th
+                  "
+                  :class="[`bg:${colors.header}_.header`]"
+                >
+                <colgroup> <!-- 總寬1581 -->
+                  <col span="1" class="w:77px">
+                  <col span="1" class="w:138px">
+                  <col span="1" class="w:45">
+                  <col span="1" class="w:115">
+                  <col span="8" class="w:48px">
+                  <col span="3" class="w:62px">
+                  <col span="3" class="w:115px">
+                  <col span="2" class="w:73px">
+                </colgroup>
+                  <thead>
+                    <tr class="header">
+                      <th>頭像</th>
+                      <th>AG</th>
+                      <th>招募類別</th>
+                      <th>類型</th>
+                      <th>生命</th>
+                      <th>速度</th>
+                      <th>攻擊</th>
+                      <th>防禦</th>
+                      <th>暴擊</th>
+                      <th>暴傷</th>
+                      <th>狀態<br />命中</th>
+                      <th>狀態<br />抵抗</th>
+                      <th>技能1<br />倍率</th>
+                      <th>技能2<br />倍率</th>
+                      <th>技能3<br />倍率</th>
+                      <th>技能TAG</th>
+                      <th>技能TAG</th>
+                      <th>技能TAG</th>
+                      <th>資料鏈</th>
+                      <th>友軍<br />資料鏈</th>
+                      <th>備註</th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+            </div>
             <div
               class="
                 overflow-x:auto
@@ -196,10 +248,9 @@
                   <col span="3" class="w:62px">
                   <col span="3" class="w:115px">
                   <col span="2" class="w:73px">
-
                 </colgroup>
                 <thead class>
-                  <tr class="header thsticky">
+                  <tr class="hide header">
                     <th>頭像</th>
                     <th>AG</th>
                     <th>招募類別</th>
