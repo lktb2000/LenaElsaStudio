@@ -1,0 +1,30 @@
+.ur {
+    background-image: linear-gradient(to right,#FFC1E0,#FFA6FF,#B9B9FF,#C4E1FF);
+  }
+  .urt {
+    background-image: linear-gradient(to right,#FFC1E0,#FFA6FF,#B9B9FF,#C4E1FF);
+  }
+  .ssrt {
+    background-image: linear-gradient(to right,#FFA042,#FFF4C1);
+  }
+  .srt {
+    background-image: linear-gradient(to right,#CA8EFF,#FFD0FF);
+  }
+  .rt {
+    background-image: linear-gradient(to right,#84C1FF,#D9FFFF);
+  }
+  .super {
+    color: #ff359a;
+  }
+  .event {
+    color: #FF2D2D;
+  }
+  .Collabs {
+    color: #921AFF;
+  }
+  .factor {
+    color: #00CACA;
+  }
+  .bouns {
+    color: #EA7500;
+  }
