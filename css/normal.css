@@ -21,6 +21,9 @@
   .rt {
     background-image: linear-gradient(to right,#84C1FF,#D9FFFF);
   }
+  .nt {
+    background-image: linear-gradient(to right,#adadad,#e2e2e2);
+  }
   .super {
     color: #ff359a;
   }
