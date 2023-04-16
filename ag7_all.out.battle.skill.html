@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>《機動戰姬：聚變》總力挑戰技能組┃鶴姬重工┃Taiwan Games DataBase</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link href="./css/normal.css" rel="stylesheet" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/master.css.js"></script>
+    <script src="./js/app.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4817244281405314"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-19GQQQP52B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-19GQQQP52B');
+    </script>
+  </head>
+  <body class="bg:fade-90 bg:fade-18@dark
+    {w:8;h:6;rounded}::scrollbar
+    bg:#d7d8df::scrollbar-thumb
+    bg:#c3c6cf::scrollbar-thumb:hover
+    bg:#c3c6cf::scrollbar-thumb:active
+    bg:#4c515f::scrollbar-thumb@dark
+    bg:#5e6476::scrollbar-thumb:hover@dark
+    bg:#5e6476::scrollbar-thumb:active@dark
+    bg:transparent::scrollbar-corner
+    rounded::scrollbar-thumb
+    overflow-x:visible">
+    <main>
+      <aside
+        id="menu"
+        class="fixed top:0 left:0 z:999 w:full w:240@sm h:full p:10|10|80 p:10@sm bg:fade-90 bg:fade-18@dark translateY(100%) translateY(0)@sm ~transform|.4s translateY(0).is-open"
+      ></aside>
+
+      <article class="{w:calc(100%-230px);ml:auto}@sm">
+        <header
+          id="header"
+          class="sticky top:0 left:0 z:998 flex gap-x:10 p:10 bg:fade-90 bg:fade-18@dark"
+        ></header>
+
+        <section id="app" class="p:0|10|10">
+          <div
+            class="min-h:calc(100vh-90px) p:20|20|70 pt:20@sm p:40@sm bg:fade-88 bg:fade-24@dark bg:no-repeat bg:fixed bg:100% bg:url(./img/home/main_background_860_w.jpg) bg:url(./img/home/main_background_860.jpg)@dark r:8"
+          >
+            <div class="hide grid-cols:3 gap:10">  <!-- Hide隱藏 -->
+              <div class="grid-col-span:3">
+                <h3 class="f:bold f:20 f:white">表格標頭底色</h3>
+                <div class="rel">
+                  <input
+                    class="block w:full h:48 px:20 bg:white r:8 outline:0"
+                    type="text"
+                    v-model="colors.header"
+                  />
+                  <div class="abs top:1/2 right:10 w:30 h:30 translateY(-50%)" :class="`bg:${colors.header}`"></div>
+                </div>
+              </div>
+              <div>
+                <h3 class="f:bold f:20 f:white">SSR 標頭底色</h3>
+                <div class="rel">
+                  <input
+                    class="block w:full h:48 px:20 bg:white r:8 outline:0"
+                    type="text"
+                    v-model="colors.ssrHeader"
+                  />
+                  <div class="abs top:1/2 right:10 w:30 h:30 translateY(-50%)" :class="`bg:${colors.ssrHeader}`"></div>
+                </div>
+              </div>
+              <div>
+                <h3 class="f:bold f:20 f:white">SR 標頭底色</h3>
+                <div class="rel">
+                  <input
+                    class="block w:full h:48 px:20 bg:white r:8 outline:0"
+                    type="text"
+                    v-model="colors.srHeader"
+                  />
+                  <div class="abs top:1/2 right:10 w:30 h:30 translateY(-50%)" :class="`bg:${colors.srHeader}`"></div>
+                </div>
+              </div>
+              <div>
+                <h3 class="f:bold f:20 f:white">R 標頭底色</h3>
+                <div class="rel">
+                  <input
+                    class="block w:full h:48 px:20 bg:white r:8 outline:0"
+                    type="text"
+                    v-model="colors.rHeader"
+                  />
+                  <div class="abs top:1/2 right:10 w:30 h:30 translateY(-50%)" :class="`bg:${colors.rHeader}`"></div>
+                </div>
+              </div>
+              <div>
+                <h3 class="f:bold f:20 f:white">SSR 底色</h3>
+                <div class="rel">
+                  <input
+                    class="block w:full h:48 px:20 bg:white r:8 outline:0"
+                    type="text"
+                    v-model="colors.ssr"
+                  />
+                  <div class="abs top:1/2 right:10 w:30 h:30 translateY(-50%)" :class="`bg:${colors.ssr}`"></div>
+                </div>
+              </div>
+              <div>
+                <h3 class="f:bold f:20 f:white">SR 底色</h3>
+                <div class="rel">
+                  <input
+                    class="block w:full h:48 px:20 bg:white r:8 outline:0"
+                    type="text"
+                    v-model="colors.sr"
+                  />
+                  <div class="abs top:1/2 right:10 w:30 h:30 translateY(-50%)" :class="`bg:${colors.sr}`"></div>
+                </div>
+              </div>
+              <div>
+                <h3 class="f:bold f:20 f:white">R 底色</h3>
+                <div class="rel">
+                  <input
+                    class="block w:full h:48 px:20 bg:white r:8 outline:0"
+                    type="text"
+                    v-model="colors.r"
+                  />
+                  <div class="abs top:1/2 right:10 w:30 h:30 translateY(-50%)" :class="`bg:${colors.r}`"></div>
+                </div>
+              </div>
+            
+          </div>
+            <h2 class="mb:10 f:24 f:38@sm f:fade-42 f:white@dark">《機動戰姬：聚變》總力挑戰技能組</h2>
+            <div
+              class="
+                overflow-x:auto
+                {h:4;rounded}::scrollbar
+                {bg:fade-84;rounded}::scrollbar-thumb bg:fade-40::scrollbar-thumb@dark bg:fade-80::scrollbar-thumb:hover bg:fade-48::scrollbar-thumb:hover@dark"
+            >
+              <table class="mb:10">
+                <tr class="v:bottom">
+                  <td>
+                    <div class="w:max bl:5|solid|#797979 bl:5|solid|#3C3C3C@dark mr:15 bg:linear-gradient(to|right,rgba(200,200,200,0.7),rgba(170,170,170,0.7)) bg:linear-gradient(to|right,rgba(246,246,248,0.7),rgba(214,214,214,0.7))@dark f:black p:8|14 lh:1.6 f:18">
+                      內文
+                    </div>
+                  </td>
+                  <td>
+                    <div class="w:max bl:5|solid|#797979 bl:5|solid|#3C3C3C@dark mr:15 bg:linear-gradient(to|right,rgba(200,200,200,0.7),rgba(170,170,170,0.7)) bg:linear-gradient(to|right,rgba(246,246,248,0.7),rgba(214,214,214,0.7))@dark f:black p:8|14 lh:1.6 f:18">
+                      內文
+                    </div>
+                  </td>
+                  <td>
+                    <div class="w:max bl:5|solid|#797979 bl:5|solid|#3C3C3C@dark mr:15 bg:linear-gradient(to|right,rgba(200,200,200,0.7),rgba(170,170,170,0.7)) bg:linear-gradient(to|right,rgba(246,246,248,0.7),rgba(214,214,214,0.7))@dark f:black p:8|14 lh:1.6 f:18">
+                      最新更新日期：2023 00/00
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <div class="mb:10 bb:1|solid|#3C3C3C bb:1|solid|#a3a3a3@dark">
+                <div class="w:max fb mb:-3"><h2 class="f:34 f:fade-42 f:white@dark bb:5|solid|#3C3C3C bb:5|solid|#3C3C3C@dark">
+                  3.0 卡栗
+                </h2></div>
+              </div>
+              <div class="mb:20 fb text:left f:24 f:fade-42 f:white@dark ">在地表對傀儡進行清掃行動時，艦隊竟遭遇到不明人物的阻擾攔截？！<br>
+                對方自稱卡栗，身為雇傭兵的她在執行任務途中見證到「紐帶」艦隊龐大的規模和獨特的作戰手段。
+              </div>
+              </table>
+              <div class="mb:10 h3t p:4 bl:6|solid|#12db00">
+                <div class="f:28 f:fade-42 f:white@dark ">
+                  背明投暗
+                  <span class="fb p:2|8 f:16 box bg:#12db00 r:6">蒼晶</span>
+                </div>
+              </div>
+              <div class="mb:50 w:1580px grid-cols:4 grid-template-columns:min gap:10|0 ai:end">
+                <div class="grid-col-span:2"> <!-- 基礎數值 -->
+                  <table
+                    class="w:788px
+                    t:center
+                    border-collapse:collapse
+                    table-layout:fixed
+                    {p:6|6;lh:1.25;b:1|solid|fade-24}_thead_th
+                    {p:6;b:1|solid|fade-24}_td
+                    {p:0}_td:nth(1)
+                    "
+                  >
+                  <colgroup> <!-- 總寬788 -->
+                    <col span="1" class="w:330px">
+                    <col span="1" class="w:100px">
+                    <col span="3" class="w:px">
+                  </colgroup>
+                  <thead>
+                    <tr class="th-default">
+                      <th class="f:22">梯隊上限：3</th>
+                      <th>屬性</th>
+                      <th>第一階段<br>1~5</th>
+                      <th>第二階段<br>6~10</th>
+                      <th>第三階段<br>11~</th>
+                    </tr>
+                    <tr class="td-default">
+                      <td rowspan="6" class="data-typegreen"><img src="./img/arterygear/all_out_boss/pic_worldboss_info_picture_08.png"></td>
+                      <th>生命</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    <tr class="td-default">
+                      <th>速度</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    <tr class="td-default">
+                      <th>防禦</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    <tr class="td-default">
+                      <th>狀態抵抗</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    <tr class="td-default">
+                      <th>免疫效果</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    <tr class="td-default">
+                      <th colspan="4" class="t:left">免疫冷卻時間延長</th>
+                    </tr>
+                  </thead>
+                </table>
+                </div>
+                <div class="pl:1px"> <!-- 共通技 -->
+                  <table
+                  class="
+                  w:393px
+                  t:center
+                  border-collapse:collapse
+                  table-layout:fixed
+                  {p:4|4;lh:1.25;b:1|solid|fade-24}_thead_th
+                  {p:6;b:1|solid|fade-24}_td
+                  {t:left}_td
+                  {p:0}_th:nth(1)
+                  "
+                >
+                  <colgroup> <!-- 395 -->
+                    <col span="1" class="w:95px">
+                    <col span="1" class="w:max">
+                  </colgroup>
+                  <thead class="th-default">
+                    <tr class="h:45px">
+                      <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_common_004.png"></th>
+                      <th class="">共通技</th>
+                    </tr>
+                    <tr class="h:25px">
+                      <th class="">被動技能</th>
+                    </tr>
+                    <tr class="h:25px">
+                      <th class="">-</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="td-default">
+                      <td colspan="2">
+                        每經過一定回合，自身疊加提升攻擊力和速度，以及疊加減少自身受到行動條降低的效果。當玩家隊伍更換時，將重置該效果。<br>
+                        自身受到同類核心的角色攻擊時，減少20%傷害。而當被自身克制類核心的角色攻擊時，減少30%傷害。<br>
+                        受到攻擊產生偏斜時，傷害降低30%。<br>
+                        第5次生命值歸零後，改變自身技能的效果。
+                      </td>
+                    </tr>
+                  </tbody>
+                  </table>
+                </div>
+                <div class="pl:1px h"> <!-- 關卡被動 -->
+                  <table
+                  class="
+                  w:394px
+                  t:center
+                  border-collapse:collapse
+                  table-layout:fixed
+                  {p:4|4;lh:1.25;b:1|solid|fade-24}_thead_th
+                  {p:6;b:1|solid|fade-24}_td
+                  {p:0}_th:nth(1)
+                  "
+                >
+                  <colgroup> <!-- 總寬1581 -->
+                    <col span="1" class="w:90px">
+                    <col span="1" class="w:max">
+                  </colgroup>
+                  <thead class="th-default">
+                    <tr class="h:50px">
+                      <th rowspan="2" class="skillbg"><img src="./img/arterygear/all_out_boss/pic_worldboss_battle_bigicon_01.png"></th>
+                      <th>風起雲湧</th>
+                    </tr>
+                    <tr class="h:40px">
+                      <th>關卡被動</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="td-default">
+                      <td colspan="2" class="t:left">
+                        出戰戰姬攻擊後，為自身恢復5%已損失生命值的血量。出戰戰姬攻擊後，若能量值不為0，則增加自身10能量值。
+                      </td>
+                    </tr>
+                  </tbody>
+                  </table>
+                </div>
+                <div class="mt:-6 grid-col-span:4">
+                  <table
+                class="
+                w:1580px
+                t:center
+                border-collapse:collapse
+                table-layout:fixed
+                {p:4|4;lh:1.25;b:1|solid|fade-24}_thead_th
+                {p:6;b:1|solid|fade-24}_td
+                {t:left}_td
+                {p:0}_th:nth(1)
+                {p:0}_th:nth(3)
+                {p:0}_th:nth(5)
+                {p:0}_th:nth(7)
+                "
+              >
+                <colgroup> <!-- 總寬1581 -->
+                  <col span="1" class="w:95px">
+                  <col span="1" class="w:300px">
+                  <col span="1" class="w:95px">
+                  <col span="1" class="w:300px">
+                  <col span="1" class="w:95px">
+                  <col span="1" class="w:300px">
+                  <col span="1" class="w:95px">
+                  <col span="1" class="w:300px">
+                </colgroup>
+                <thead>
+                  <tr class="thb-ssr">
+                    <th colspan="8" class="fb f:24 p:4!">
+                      第1階段
+                    </th>
+                  </tr>
+                </thead>
+                <thead class="th-default">
+                  <tr class="h:35">
+                    <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/pic_worldboss_battle_bigicon_01.png"></th>
+                    <th>武藝至極</th>
+                    <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/pic_worldboss_battle_bigicon_01.png"></th>
+                    <th>飽和攻擊</th>
+                    <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/pic_worldboss_battle_bigicon_01.png"></th>
+                    <th>戰場清理</th>
+                    <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/pic_worldboss_battle_bigicon_01.png"></th>
+                    <th>非法改造</th>
+                  </tr>
+                  <tr class="h:30">
+                    <th>主動技能</th>
+                    <th>主動技能</th>
+                    <th>主動技能</th>
+                    <th>被動技能</th>
+                  </tr>
+                  <tr class="h:30">
+                    <th>-</th>
+                    <th>CD：3回合</th>
+                    <th>CD：5回合</th>
+                    <th>-</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="td-default">
+                    <td colspan="2">1</td>
+                    <td colspan="2">2</td>
+                    <td colspan="2">3</td>
+                    <td colspan="2">
+                      場上每5次回合結束時，若自身處於不可強化狀態，則為自身清除不可強化狀態；若自身不處於不可強化狀態，則賦予自身〈攻擊力上升〉〈暴擊傷害上升〉〈命中率上升〉〈防禦力上升〉〈狀態抗性上升〉〈免疫〉〈貫穿模組〉中的2種，持續2回合。<br>
+                      攻擊後若自身處於增益狀態，對目標造成追加傷害，追加傷害貫穿目標70%防禦力。受到攻擊後，推進自身行動條5%，若此時自身處於增益狀態，則強化為推進自身行動條10%。<br>
+                      自身受到攻擊時，會根據攻擊者的增益狀態數目為攻擊者增加傷害，每有1個增益狀態，傷害提升10%。<br>
+                      敵方沒有修復型目標時，自身防禦力提升30%，每回合結束時刷新。<br>
+                      不受最大生命值傷害加成效果影響。<br>
+                      玩家更換隊伍時，為自身清除全部減益狀態。</td>
+                  </tr>
+                </tbody>
+                <thead>
+                  <tr class="thb-ssr2">
+                    <th colspan="8" class="fb f:24 p:4!">
+                      第2階段
+                    </th>
+                  </tr>
+                </thead>
+                <thead class="th-default">
+                  <tr class="h:35">
+                    <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/pic_worldboss_battle_bigicon_01.png"></th>
+                    <th>武藝至極</th>
+                    <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/pic_worldboss_battle_bigicon_01.png"></th>
+                    <th>飽和攻擊</th>
+                    <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/pic_worldboss_battle_bigicon_01.png"></th>
+                    <th>戰場清理</th>
+                    <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/pic_worldboss_battle_bigicon_01.png"></th>
+                    <th>非法改造</th>
+                  </tr>
+                  <tr class="h:30">
+                    <th>主動技能</th>
+                    <th>主動技能</th>
+                    <th>主動技能</th>
+                    <th>被動技能</th>
+                  </tr>
+                  <tr class="h:30">
+                    <th>-</th>
+                    <th>CD：3回合</th>
+                    <th>CD：5回合</th>
+                    <th>-</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="td-default">
+                    <td colspan="2">1</td>
+                    <td colspan="2">2</td>
+                    <td colspan="2">3</td>
+                    <td colspan="2">
+                      場上每5次回合結束時，若自身處於不可強化狀態，則為自身清除不可強化狀態；若自身不處於不可強化狀態，則賦予自身〈攻擊力上升〉〈暴擊傷害上升〉〈命中率上升〉〈防禦力上升〉〈狀態抗性上升〉〈免疫〉〈貫穿模組〉中的2種，持續2回合。<br>
+                      攻擊後若自身處於增益狀態，對目標造成追加傷害，追加傷害貫穿目標70%防禦力。受到攻擊後，推進自身行動條5%，若此時自身處於增益狀態，則強化為推進自身行動條10%。<br>
+                      自身受到攻擊時，會根據攻擊者的增益狀態數目為攻擊者增加傷害，每有1個增益狀態，傷害提升10%。<br>
+                      敵方沒有修復型目標時，自身防禦力提升30%，每回合結束時刷新。<br>
+                      不受最大生命值傷害加成效果影響。<br>
+                      玩家更換隊伍時，為自身清除全部減益狀態。</td>
+                  </tr>
+                </tbody>
+                  </table>
+                </div>
+              </div>
+              <table
+                class="
+                w:1580px
+                t:center
+                border-collapse:collapse
+                table-layout:fixed
+                {p:6|6;lh:1.25;b:1|solid|fade-24}_thead_th
+                {p:6;b:1|solid|fade-24}_td
+                {t:left}_td
+                hide
+                "
+              >
+                <colgroup> <!-- 總寬1581 -->
+                  <col span="1" class="w:95px">
+                  <col span="1" class="w:300px">
+                  <col span="1" class="w:95px">
+                  <col span="1" class="w:300px">
+                  <col span="1" class="w:95px">
+                  <col span="1" class="w:300px">
+                  <col span="1" class="w:95px">
+                  <col span="1" class="w:300px">
+                </colgroup>
+                <thead class="th-default">
+                  <tr class="">
+                    <th rowspan="3"></th>
+                    <th>武藝至極</th>
+                    <th rowspan="3"></th>
+                    <th>飽和攻擊</th>
+                    <th rowspan="3"></th>
+                    <th>戰場清理</th>
+                    <th rowspan="3"></th>
+                    <th>非法改造</th>
+                  </tr>
+                  <tr class="">
+                    <th>主動技能</th>
+                    <th>主動技能</th>
+                    <th>主動技能</th>
+                    <th>被動技能</th>
+                  </tr>
+                  <tr class="">
+                    <th>-</th>
+                    <th>CD：3回合</th>
+                    <th>CD：5回合</th>
+                    <th>-</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="">
+                    <td colspan="2">1</td>
+                    <td colspan="2">2</td>
+                    <td colspan="2">3</td>
+                    <td colspan="2">
+                      場上每5次回合結束時，若自身處於不可強化狀態，則為自身清除不可強化狀態；若自身不處於不可強化狀態，則賦予自身〈攻擊力上升〉〈暴擊傷害上升〉〈命中率上升〉〈防禦力上升〉〈狀態抗性上升〉〈免疫〉〈貫穿模組〉中的2種，持續2回合。<br>
+                      攻擊後若自身處於增益狀態，對目標造成追加傷害，追加傷害貫穿目標70%防禦力。受到攻擊後，推進自身行動條5%，若此時自身處於增益狀態，則強化為推進自身行動條10%。<br>
+                      自身受到攻擊時，會根據攻擊者的增益狀態數目為攻擊者增加傷害，每有1個增益狀態，傷害提升10%。<br>
+                      敵方沒有修復型目標時，自身防禦力提升30%，每回合結束時刷新。<br>
+                      不受最大生命值傷害加成效果影響。<br>
+                      玩家更換隊伍時，為自身清除全部減益狀態。</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="mb:10 bb:1|solid|#797979 bb:1|solid|#3C3C3C@dark">
+                <div class="w:max"><h3 class="f:24 f:30@sm f:fade-42 f:white@dark bb:1|solid|#797979 bb:2|solid|#3C3C3C@dark">
+                  2.0 克拉肯
+                </h3></div>
+              </div>
+              <div class="mb:10 bb:1|solid|#797979 bb:1|solid|#3C3C3C@dark">
+                <div class="w:max"><h3 class="f:24 f:30@sm f:fade-42 f:white@dark bb:1|solid|#797979 bb:2|solid|#3C3C3C@dark">
+                  1.0 劉星瑤
+                </h3></div>
+              </div>
+              <table
+                class="
+                w:full
+                min-w:900
+                t:center
+                border-collapse:collapse
+                table-layout:fixed
+                {p:8|6;lh:1.25;b:1|solid|fade-24}_thead_th
+                {p:6;b:1|solid|fade-24}_td
+                {f:bolder;f:22}_td:nth(1)
+                {p:0}_td:nth(2)
+                {f:bolder;f:18}_td:nth(3)
+                {p:0}_td:nth(4)
+                {f:bolder}_td:nth(5)
+                {f:bolder;f:26}_td:nth(6)
+                {f:bolder;f:26}_td:nth(7)
+                {f:bolder;f:26}_td:nth(8)
+                {f:20}_td:nth(9)
+                {t:left}_td:nth(11)
+                "
+                :class="[`bg:${colors.header}_.header`,`bg:${colors.ssr}_.ssr`,`bg:${colors.sr}_.sr`,`bg:${colors.r}_.r`,`bg:${colors.ssrHeader}_.ssr-header`,`bg:${colors.srHeader}_.sr-header`,`bg:${colors.rHeader}_.r-header`]"
+              >
+                <colgroup> <!-- 總寬1581 -->
+                  <col span="1" class="w:65px">
+                  <col span="1" class="w:85px">
+                  <col span="1" class="w:165px">
+                  <col span="1" class="w:55px">
+                  <col span="1" class="w:145px">
+                  <col span="3" class="w:55px">
+                  <col span="1" class="w:65px">
+                  <col span="1" class="w:200px">
+                  <col span="1" class="w:636px">
+                </colgroup>
+                <thead>
+                  <tr class="ur {f:32}">
+                    <th colspan="11">Tier 0</th>
+                  </tr>
+                  <tr class="white-header">
+                    <th>評級</th>
+                    <th>頭像</th>
+                    <th>角色</th>
+                    <th>類型</th>
+                    <th>招募類別</th>
+                    <th>拓荒</th>
+                    <th>總力</th>
+                    <th>PvP</th>
+                    <th>專武<br>優先級</th>
+                    <th>角色定位</th>
+                    <th>簡評</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="ssr">
+                    <td class="ur">10.0</td>
+                    <td><img src="./img/arterygear/char_portrait/spr_AGsmallcard_10000120.png"></td>
+                    <td>克拉麗絲</td>
+                    <td><img src="./img/arterygear/Icon/drxx_icon_profession_2_4.png"></td>
+                    <td><span class="event">活動招募</span></td>
+                    <td><span class="lvss">SS</span></td>
+                    <td><span class="lvss">SS</span></td>
+                    <td><span class="lvss">SS</span></td>
+                    <td>無</td>
+                    <td>先手推條(核彈發射器)<br>單體增傷(大攻擊/暴傷)<br>群體無敵/自我推條</td>
+                    <td>PvP主流的魔法核彈核心之一。愛麗絲的完全上位版。推進80%附帶強力增傷效果，是目前PvP強勢的魔法核彈中的發射器，在PvE也是強力的增傷及推條手段。群體無敵在各種場合也帶來極大的生存保障及自身推條。進攻及防守性能都極強的輔助。</td>
+                  </tr>
+                </tbody>
+              </table>  
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <button
+        id="menu-toggle"
+        class="fixed bottom:10 left:1/2 z:1000 flex hide@sm center-content w:180 h:60 px:20 bg:linear-gradient(135deg,#618bfb,#ff56b4) r:8 translateX(-50%) ~width|.4s w:calc(100%-20px).is-active"
+        type="button"
+      >
+        <span class="f:14 f:white .is-active_{hide}">展開選單</span>
+        <span class="hide f:14 f:white .is-active_{block}">關閉選單</span>
+        <div class="rel w:20 h:30 ml:4 .is-active_{ml:auto}">
+          <span
+            class="abs top:-8 right:0 bottom:0 left:0 w:10 h:1 m:auto bg:fade-90 .is-active_{top:0;rotate(45deg)}"
+          ></span>
+          <span
+            class="abs top:0 right:0 bottom:0 left:0 w:10 h:1 m:auto bg:fade-90 .is-active_{opacity:0}"
+          ></span>
+          <span
+            class="abs top:8 right:0 bottom:0 left:0 w:10 h:1 m:auto bg:fade-90 .is-active_{top:0;rotate(-45deg)}"
+          ></span>
+        </div>
+      </button>
+    </main>
+
+    <script>
+      const { createApp } = Vue;
+
+      createApp({
+        data() {
+          return {
+            colors: {
+              header:'#ffcf4f',
+              ssr: "#fff2cc",
+              sr: "#ead3ff",
+              r: "#D2E9FF",
+              'ssrHeader':'#ffe599',
+              'srHeader':'#DCB5FF',
+              'rHeader':'#ACD6FF',
+            },
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
