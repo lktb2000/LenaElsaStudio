@@ -89,12 +89,12 @@
     background-image: linear-gradient(to right,rgba(192, 192, 192, 0.4),rgba(192, 192, 192, 0.1),rgba(192, 192, 192, 0),rgba(192, 192, 192, 0),rgba(192, 192, 192, 0));
   }
   .h3tdark {
-    background-image: linear-gradient(to right,rgba(150, 150, 150, 0.4),rgba(150, 150, 150, 0.1),rgba(192, 192, 192, 0),rgba(192, 192, 192, 0),rgba(192, 192, 192, 0));
+    background-image: linear-gradient(to right,rgba(110, 110, 110, 0.4),rgba(110, 110, 110, 0.1),rgba(192, 192, 192, 0),rgba(192, 192, 192, 0),rgba(192, 192, 192, 0));
   }
   .thb-ssr {
-    background-image: linear-gradient(to bottom,rgba(255, 240, 152, 0.9),rgba(255, 248, 212, 0.9));
+    background-image: linear-gradient(to bottom,rgba(255, 238, 139, 0.9),rgba(255, 248, 212, 0.9));
   }
   .thb-ssr2 {
-    background-image: linear-gradient(to bottom,rgba(255, 161, 66, 0.9),rgba(255, 238, 193, 0.9));
+    background-image: linear-gradient(to bottom,rgba(255, 194, 132, 0.9),rgba(255, 238, 193, 0.9));
   }
   
