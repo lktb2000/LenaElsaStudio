@@ -83,7 +83,7 @@
     background-image: linear-gradient(to bottom,rgba(224, 224, 224, 0.9),rgba(170, 170, 170, 0.9));
   }
   .td-default {
-    background-color: rgba(235, 235, 235, 0.8)
+    background-color: rgba(235, 235, 235, 0.8);
   }
   .h3t {
     background-image: linear-gradient(to right,rgba(192, 192, 192, 0.4),rgba(192, 192, 192, 0.1),rgba(192, 192, 192, 0),rgba(192, 192, 192, 0),rgba(192, 192, 192, 0));
@@ -97,4 +97,21 @@
   .thb-ssr2 {
     background-image: linear-gradient(to bottom,rgba(255, 194, 132, 0.9),rgba(255, 238, 193, 0.9));
   }
-  
+  .skilltext-green {
+    color: #27a117; font-weight: bolder;
+  }
+  .skilltext-orange {
+    color: #e76800; font-weight: bolder;
+  }
+  .skilltext-yellow {
+    color: #cf7602; font-weight: bolder;
+  }
+  .skilltext-blue {
+    color: #136cd1; font-weight: bolder;
+  }
+  .skilltext-red {
+    color: #b80000; font-weight: bolder;
+  }
+  .skilltext-purple {
+    color: #cf31ff; font-weight: bolder;
+  }
