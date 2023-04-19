@@ -49,86 +49,6 @@
           <div
             class="min-h:calc(100vh-90px) p:20|20|70 pt:20@sm p:40@sm bg:fade-88 bg:fade-24@dark bg:no-repeat bg:fixed bg:100% bg:url(./img/home/main_background_860_w.jpg) bg:url(./img/home/main_background_860.jpg)@dark r:8"
           >
-            <div class="hide grid-cols:3 gap:10">  <!-- Hide隱藏 -->
-              <div class="grid-col-span:3">
-                <h3 class="f:bold f:20 f:white">表格標頭底色</h3>
-                <div class="rel">
-                  <input
-                    class="block w:full h:48 px:20 bg:white r:8 outline:0"
-                    type="text"
-                    v-model="colors.header"
-                  />
-                  <div class="abs top:1/2 right:10 w:30 h:30 translateY(-50%)" :class="`bg:${colors.header}`"></div>
-                </div>
-              </div>
-              <div>
-                <h3 class="f:bold f:20 f:white">SSR 標頭底色</h3>
-                <div class="rel">
-                  <input
-                    class="block w:full h:48 px:20 bg:white r:8 outline:0"
-                    type="text"
-                    v-model="colors.ssrHeader"
-                  />
-                  <div class="abs top:1/2 right:10 w:30 h:30 translateY(-50%)" :class="`bg:${colors.ssrHeader}`"></div>
-                </div>
-              </div>
-              <div>
-                <h3 class="f:bold f:20 f:white">SR 標頭底色</h3>
-                <div class="rel">
-                  <input
-                    class="block w:full h:48 px:20 bg:white r:8 outline:0"
-                    type="text"
-                    v-model="colors.srHeader"
-                  />
-                  <div class="abs top:1/2 right:10 w:30 h:30 translateY(-50%)" :class="`bg:${colors.srHeader}`"></div>
-                </div>
-              </div>
-              <div>
-                <h3 class="f:bold f:20 f:white">R 標頭底色</h3>
-                <div class="rel">
-                  <input
-                    class="block w:full h:48 px:20 bg:white r:8 outline:0"
-                    type="text"
-                    v-model="colors.rHeader"
-                  />
-                  <div class="abs top:1/2 right:10 w:30 h:30 translateY(-50%)" :class="`bg:${colors.rHeader}`"></div>
-                </div>
-              </div>
-              <div>
-                <h3 class="f:bold f:20 f:white">SSR 底色</h3>
-                <div class="rel">
-                  <input
-                    class="block w:full h:48 px:20 bg:white r:8 outline:0"
-                    type="text"
-                    v-model="colors.ssr"
-                  />
-                  <div class="abs top:1/2 right:10 w:30 h:30 translateY(-50%)" :class="`bg:${colors.ssr}`"></div>
-                </div>
-              </div>
-              <div>
-                <h3 class="f:bold f:20 f:white">SR 底色</h3>
-                <div class="rel">
-                  <input
-                    class="block w:full h:48 px:20 bg:white r:8 outline:0"
-                    type="text"
-                    v-model="colors.sr"
-                  />
-                  <div class="abs top:1/2 right:10 w:30 h:30 translateY(-50%)" :class="`bg:${colors.sr}`"></div>
-                </div>
-              </div>
-              <div>
-                <h3 class="f:bold f:20 f:white">R 底色</h3>
-                <div class="rel">
-                  <input
-                    class="block w:full h:48 px:20 bg:white r:8 outline:0"
-                    type="text"
-                    v-model="colors.r"
-                  />
-                  <div class="abs top:1/2 right:10 w:30 h:30 translateY(-50%)" :class="`bg:${colors.r}`"></div>
-                </div>
-              </div>
-            
-          </div>
             <h2 class="mb:10 f:24 f:38@sm fb f:fade-42 f:white@dark">《機動戰姬：聚變》角色強度排行</h2>
             <div
               class="
@@ -859,6 +779,19 @@
                     <td>無</td>
                     <td>攤傷保排(20%)<br>群體護盾</td>
                     <td>杏子的完全下位版。完全相同的技能套路，但觸發條件限制為受到群體攻擊才會發動護盾，原本後手效果就已經夠劣勢了，結果又限縮觸發條件，導致使用門檻高於杏子，基本難以上場。</td>
+                  </tr>
+                  <tr class="ssr"> 
+                    <td class="rt">7.4</td>
+                    <td><img src="./img/arterygear/char_portrait/spr_AGsmallcard_10000156.png"></td>
+                    <td>普莉希亞</td>
+                    <td><img src="./img/arterygear/Icon/drxx_icon_profession_1_3.png"></td>
+                    <td><span class="event">活動招募</span></td>
+                    <td><span class="lvb">B</span></td>
+                    <td><span class="lvb">B</span></td>
+                    <td><span class="lva">A</span></td>
+                    <td>無</td>
+                    <td>抗怪貫穿減傷<br>反擊降攻</td>
+                    <td>首先發起抗貫穿的號角，並沒有。設計方向錯誤，導致抗貫穿效果只在貫穿不高的情況下有效，對於魔法核彈這種85%以上的貫穿起不到克制效果，加上這種減傷或保排型的角色，在現今PvP環境過於被動，基本難以上場。</td>
                   </tr>
                   <tr class="sr"> 
                     <td class="rt">7.3</td>
