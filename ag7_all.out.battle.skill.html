@@ -60,23 +60,18 @@
                 <tr class="v:bottom">
                   <td>
                     <div class="w:max bl:5|solid|#797979 bl:5|solid|#3C3C3C@dark mr:15 bg:linear-gradient(to|right,rgba(200,200,200,0.7),rgba(170,170,170,0.7)) bg:linear-gradient(to|right,rgba(246,246,248,0.7),rgba(214,214,214,0.7))@dark f:black p:8|14 lh:1.6 f:18">
-                      內文
+                      技能效果或數據請以遊戲內為主，如有錯誤，歡迎至Discord群組報錯。
                     </div>
                   </td>
                   <td>
                     <div class="w:max bl:5|solid|#797979 bl:5|solid|#3C3C3C@dark mr:15 bg:linear-gradient(to|right,rgba(200,200,200,0.7),rgba(170,170,170,0.7)) bg:linear-gradient(to|right,rgba(246,246,248,0.7),rgba(214,214,214,0.7))@dark f:black p:8|14 lh:1.6 f:18">
-                      內文
-                    </div>
-                  </td>
-                  <td>
-                    <div class="w:max bl:5|solid|#797979 bl:5|solid|#3C3C3C@dark mr:15 bg:linear-gradient(to|right,rgba(200,200,200,0.7),rgba(170,170,170,0.7)) bg:linear-gradient(to|right,rgba(246,246,248,0.7),rgba(214,214,214,0.7))@dark f:black p:8|14 lh:1.6 f:18">
-                      最新更新日期：2023 00/00
+                      最新更新日期：2023 04/19
                     </div>
                   </td>
                 </tr>
               </table>
               <div class="mb:40"> <!-- 導覽列 -->
-                <div>
+                <div class="hide"> <!-- 劉星瑤待補 -->
                   <div class="mt:23 mb:5 h3t h3tdark@dark p:4 bl:6|solid|#ffad14 bl:6|solid|#FFE153@dark">
                     <div class="f:20 f:#000000-42 f:white@dark">
                       1.0版本 劉星瑤
@@ -95,7 +90,7 @@
                     </tbody>
                   </table>
                 </div>
-                <div>
+                <div> <!-- 克拉肯 -->
                   <div class="mt:23 mb:5 h3t h3tdark@dark p:4 bl:6|solid|#ffad14 bl:6|solid|#FFE153@dark">
                     <div class="f:20 f:#000000-42 f:white@dark">
                       2.0版本 克拉肯
@@ -114,7 +109,7 @@
                     </tbody>
                   </table>
                 </div>
-                <div>
+                <div> <!-- 卡栗 -->
                   <div class="mt:23 mb:5 h3t h3tdark@dark p:4 bl:6|solid|#ffad14 bl:6|solid|#FFE153@dark">
                     <div class="f:20 f:#000000-42 f:white@dark">
                       <a href="#3.0">3.0版本 卡栗</a>
@@ -134,7 +129,7 @@
                   </table>
                 </div>
               </div>
-              <div> <!-- BOSS1 -->
+              <div class="hide"> <!-- BOSS1 -->
                 <a id="3.0" class="target-fix"></a>
                 <div> <!-- BOSS Name -->
                   <div class="mb:5 bb:1|solid|#3C3C3C bb:1|solid|#cccccc@dark">
@@ -944,7 +939,7 @@
                       </colgroup>
                       <thead>
                         <tr class="th-default">
-                          <th class="f:22">梯隊上限：3</th>
+                          <th class="f:22">梯隊上限：6</th>
                           <th>屬性</th>
                           <th>第一階段<br>1~5</th>
                           <th>第二階段<br>6~10</th>
@@ -977,7 +972,9 @@
                         </tr>
                         <tr class="td-default h:75px">
                           <th>免疫效果</th>
-                          <th>?</th>
+                          <th>當機 挑釁 暈眩<br>
+                              腐蝕 技能干擾<br>
+                              武裝過熱</th>
                           <th>?</th>
                           <th>?</th>
                         </tr>
@@ -1020,7 +1017,10 @@
                       <tbody>
                         <tr class="td-default">
                           <td colspan="2">
-                            共
+                            每經過一定回合，自身疊加提升攻擊力和速度，以及疊加減少自身受到行動條降低的效果。當玩家隊伍更換時，將重置該效果。<br>
+                            自身受到同類核心的角色攻擊時，減少<span class="skilltext-yellow">20%</span>傷害。而當被自身克制類核心的角色攻擊時，減少<span class="skilltext-yellow">30%</span>傷害。<br>
+                            受到攻擊產生偏斜時，傷害降低<span class="skilltext-yellow">30%</span>。<br>
+                            第5次生命值歸零後，改變自身技能的效果。
                           </td>
                         </tr>
                       </tbody>
@@ -1095,14 +1095,14 @@
                     </thead>
                     <thead class="th-default">
                       <tr class="h:35">
-                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_15016401.png"></th>
-                        <th>武藝至極</th>
-                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_15016402.png"></th>
-                        <th>飽和攻擊</th>
-                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_15016403.png"></th>
-                        <th>戰場清理</th>
+                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_2070017601.png"></th>
+                        <th>突破囹圄</th>
+                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_2070017602.png"></th>
+                        <th>專攻棄子</th>
+                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_2070017603.png"></th>
+                        <th>迭代計畫</th>
                         <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_common_005.png"></th>
-                        <th>非法改造</th>
+                        <th>非正常AG核心</th>
                       </tr>
                       <tr class="h:30">
                         <th>主動技能</th>
@@ -1113,17 +1113,25 @@
                       <tr class="h:30">
                         <th>-</th>
                         <th>CD：3回合</th>
-                        <th>CD：5回合</th>
+                        <th>CD：4回合</th>
                         <th>-</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr class="td-default">
-                        <td colspan="2">1</td>
-                        <td colspan="2">2</td>
-                        <td colspan="2">3</td>
+                        <td colspan="2">對全體敵方目標造成傷害，<span class="skilltext-yellow">根據目標減益數目提高傷害</span>。</td>
                         <td colspan="2">
-                          4</td>
+                          對單體敵方目標造成傷害，優先攻擊編隊<span class="skilltext-yellow">1</span>號位的目標。<br>
+                          攻擊非<span class="skilltext-purple">防衛型</span>的目標時增加<span class="skilltext-yellow">50%</span>傷害。</td>
+                        <td colspan="2">
+                          解除自身<span class="skilltext-blue">2</span>個減益狀態，賦予自身<span class="skilltext-blue">攻擊力上升</span>狀態，持續<span class="skilltext-blue">2</span>回合。<br>
+                          並賦予全體敵方目標<span class="skilltext-red">攻擊力下降</span>、<span class="skilltext-red">暴擊率下降</span>、<span class="skilltext-red">暴擊傷害下降</span>狀態中的其中<span class="skilltext-red">1</span>種，持續<span class="skilltext-red">2</span>回合。</td>
+                        <td colspan="2">
+                          自身回合結束時，輪流對<span class="skilltext-yellow">1~4</span>號位的敵方目標造成<span class="skilltext-red">眩暈</span>狀態，持續<span class="skilltext-red">1</span>回合。<br>
+                          自身受到的非暴擊技能攻擊傷害提升<span class="skilltext-yellow">50%</span>。<br>
+                          自身受到反擊技能攻擊傷害提升<span class="skilltext-yellow">50%</span>。<br>
+                          敵方沒有<span class="skilltext-purple">戰術型</span>目標時，自身防禦力提升<span class="skilltext-yellow">30%</span>，每回合結束時刷新。<br>
+                          不受<span class="skilltext-yellow">最大生命值傷害加成</span>效果影響。</td>
                       </tr>
                     </tbody>
                     <thead>
@@ -1135,14 +1143,14 @@
                     </thead>
                     <thead class="th-default">
                       <tr class="h:35">
-                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_15016401.png"></th>
-                        <th>武藝至極</th>
-                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_15016402.png"></th>
-                        <th>飽和攻擊</th>
-                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_15016403.png"></th>
-                        <th>戰場清理</th>
+                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_2071017601.png"></th>
+                        <th>突破囹圄</th>
+                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_2071017602.png"></th>
+                        <th>專攻棄子</th>
+                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_2071017603.png"></th>
+                        <th>迭代計畫</th>
                         <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_common_005.png"></th>
-                        <th>非法改造</th>
+                        <th>非正常AG核心</th>
                       </tr>
                       <tr class="h:30">
                         <th>主動技能</th>
@@ -1159,11 +1167,22 @@
                     </thead>
                     <tbody>
                       <tr class="td-default">
-                        <td colspan="2">1</td>
-                        <td colspan="2">2</td>
-                        <td colspan="2">3</td>
                         <td colspan="2">
-                          4</td>
+                          對全體敵方目標造成傷害，根據自身攻擊力造成<span class="skilltext-yellow">追加傷害</span>，追加傷害<span class="skilltext-yellow">貫穿</span>部分防禦。
+                          擊退全體目標行動條<span class="skilltext-yellow">15%</span>。
+                        </td>
+                        <td colspan="2">
+                          對單體敵方目標造成傷害，優先攻擊編隊<span class="skilltext-yellow">1</span>號位的目標。<br>
+                          攻擊後若目柝生命值比例低於<span class="skilltext-yellow">50%</span>，則對全體敵方目標造成<span class="skilltext-red">防禦力下降</span>，持續<span class="skilltext-red">2</span>回合。<br>
+                        </td>
+                        <td colspan="2">對全體敵方目標造成高額傷害，賦予自身<span class="skilltext-red">攻擊力下降</span>狀態，持續<span class="skilltext-red">2</span>回合。</td>
+                        <td colspan="2">
+                          自身回合結束時，輪流對<span class="skilltext-yellow">1~4</span>號位的敵方目標造成<span class="skilltext-red">眩暈</span>狀態，持續<span class="skilltext-red">1</span>回合。<br>
+                          自身受到的非暴擊技能攻擊傷害提升<span class="skilltext-yellow">50%</span>。<br>
+                          任意目標回合結束時，若自身處於當機、眩暈、技能干擾狀態，則解除對應狀態並使自身到下回台開始前，受到的傷害提升<span class="skilltext-yellow">50%</span> 。
+                          敵方沒有<span class="skilltext-purple">修復型</span>目標時，自身防禦力提升<span class="skilltext-yellow">30%</span>，每回合結束時刷新。<br>
+                          不受<span class="skilltext-yellow">最大生命值傷害加成</span>效果影響。</td>
+                        </td>
                       </tr>
                     </tbody>
                       </table>
@@ -1230,8 +1249,11 @@
                         </tr>
                         <tr class="td-default h:75px">
                           <th>免疫效果</th>
-                          <th>?</th>
-                          <th>?</th>
+                          <th>當機 挑釁 暈眩<br>
+                            腐蝕 技能干擾<br>
+                            不可強化</th>
+                          <th>挑釁 腐蝕 <br>
+                            不可強化</th>
                           <th>?</th>
                         </tr>
                         <tr class="td-default h:60px">
@@ -1272,7 +1294,10 @@
                       <tbody>
                         <tr class="td-default">
                           <td colspan="2">
-                            共
+                            每經過一定回合，自身疊加提升攻擊力和速度，以及疊加減少自身受到行動條降低的效果。當玩家隊伍更換時，將重置該效果。<br>
+                            自身受到同類核心的角色攻擊時，減少<span class="skilltext-yellow">20%</span>傷害。而當被自身克制類核心的角色攻擊時，減少<span class="skilltext-yellow">30%</span>傷害。<br>
+                            受到攻擊產生偏斜時，傷害降低<span class="skilltext-yellow">30%</span>。<br>
+                            第5次生命值歸零後，改變自身技能的效果。
                           </td>
                         </tr>
                       </tbody>
@@ -1347,14 +1372,14 @@
                     </thead>
                     <thead class="th-default">
                       <tr class="h:35">
-                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_15016401.png"></th>
-                        <th>武藝至極</th>
-                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_15016402.png"></th>
-                        <th>飽和攻擊</th>
-                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_15016403.png"></th>
-                        <th>戰場清理</th>
+                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_2070017601.png"></th>
+                        <th>突破囹圄</th>
+                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_2070017602.png"></th>
+                        <th>專攻棄子</th>
+                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_2070017603.png"></th>
+                        <th>迭代計畫</th>
                         <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_common_005.png"></th>
-                        <th>非法改造</th>
+                        <th>非正常AG核心</th>
                       </tr>
                       <tr class="h:30">
                         <th>主動技能</th>
@@ -1365,17 +1390,24 @@
                       <tr class="h:30">
                         <th>-</th>
                         <th>CD：3回合</th>
-                        <th>CD：5回合</th>
+                        <th>CD：4回合</th>
                         <th>-</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr class="td-default">
-                        <td colspan="2">1</td>
-                        <td colspan="2">2</td>
-                        <td colspan="2">3</td>
+                        <td colspan="2">對全體敵方目標造成傷害，隊全體目標造成<span class="skilltext-red">電擊引爆</span>效果。</td>
+                        <td colspan="2">對單體敵方目標造成傷害，優先攻擊編隊<span class="skilltext-yellow">1</span>號位的目標。攻擊非<span class="skilltext-purple">均衡型</span>的目標時增加<span class="skilltext-yellow">50%</span>傷害。</td>
                         <td colspan="2">
-                          4</td>
+                          解除自身<span class="skilltext-blue">2</span>個減益狀態，賦予自身<span class="skilltext-blue">防護罩</span>狀態，持續<span class="skilltext-yellow">2</span>回合。<br>
+                          目標攻擊時，若自身處於防護罩狀態，則對攻擊者造成<span class="skilltext-red">電擊</span>狀態，持續<span class="skilltext-red">2</span>回合。
+                        <td colspan="2">
+                          自身回合結束時，輪流對<span class="skilltext-yellow">1~4</span>號位的敵方目標造成<span class="skilltext-red">眩暈</span>狀態，持續<span class="skilltext-red">1</span>回合。<br>
+                          自身受到的非暴擊技能攻擊傷害提升<span class="skilltext-yellow">50%</span>。<br>
+                          自身受到反擊技能攻擊傷害提升<span class="skilltext-yellow">50%</span>。<br>
+                          敵方沒有<span class="skilltext-purple">均衡型</span>目標時，自身防禦力提升<span class="skilltext-yellow">30%</span>，每回合結束時刷新。<br>
+                          不受<span class="skilltext-yellow">最大生命值傷害加成</span>效果影響。
+                        </td>
                       </tr>
                     </tbody>
                     <thead>
@@ -1387,14 +1419,14 @@
                     </thead>
                     <thead class="th-default">
                       <tr class="h:35">
-                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_15016401.png"></th>
-                        <th>武藝至極</th>
-                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_15016402.png"></th>
-                        <th>飽和攻擊</th>
-                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_15016403.png"></th>
-                        <th>戰場清理</th>
+                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_2071017601.png"></th>
+                        <th>突破囹圄</th>
+                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_2071017602.png"></th>
+                        <th>專攻棄子</th>
+                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_2071017603.png"></th>
+                        <th>迭代計畫</th>
                         <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_common_005.png"></th>
-                        <th>非法改造</th>
+                        <th>非正常AG核心</th>
                       </tr>
                       <tr class="h:30">
                         <th>主動技能</th>
@@ -1411,11 +1443,20 @@
                     </thead>
                     <tbody>
                       <tr class="td-default">
-                        <td colspan="2">1</td>
-                        <td colspan="2">2</td>
-                        <td colspan="2">3</td>
+                        <td colspan="2">對全體敵方目標造成傷害，擊退全體目標行動條<span class="skilltext-yellow">15%</span>，並解除全體目標<span class="skilltext-blue">1</span>個增益狀態。</td>
                         <td colspan="2">
-                          4</td>
+                          對單體敵方目標造成傷害，優先攻擊編隊<span class="skilltext-yellow">1</span>號位的目標。<br>
+                          攻擊後若目柝生命值比例低於<span class="skilltext-yellow">50%</span>，則對全體敵方目標造成<span class="skilltext-red">電擊</span>狀態，持續<span class="skilltext-yellow">2</span>回合。</td>
+                        <td colspan="2">
+                          對全體敵方目標造成傷害，解除全體目標<span class="skilltext-blue">1</span>個增益狀態，並對全體目標造成<span class="skilltext-red">電擊</span>狀態，持續<span class="skilltext-red">2</span>回台。<br>
+                          賦予自身<span class="skilltext-red">攻擊力下降</span>狀態，持續<span class="skilltext-red">2</span>回合。</td>
+                        <td colspan="2">
+                          自身回合結束時，輪流對<span class="skilltext-yellow">1~4</span>號位的敵方目標造成<span class="skilltext-red">眩暈</span>狀態，持續<span class="skilltext-red">1</span>回合。<br>
+                          自身受到的非暴擊技能攻擊傷害提升<span class="skilltext-yellow">50%</span>。<br>
+                          任意目標回合結束時，若自身處於當機、眩暈、技能干擾狀態，則解除對應狀態並使自身到下回台開始前，受到的傷害提升<span class="skilltext-yellow">50%</span> 。
+                          敵方沒有<span class="skilltext-purple">強襲型</span>目標時，自身防禦力提升<span class="skilltext-yellow">30%</span>，每回合結束時刷新。<br>
+                          不受<span class="skilltext-yellow">最大生命值傷害加成</span>效果影響。</td>
+                        </td>
                       </tr>
                     </tbody>
                       </table>
@@ -1458,33 +1499,35 @@
                         <tr class="td-default">
                           <td rowspan="6" class=""><img src="./img/arterygear/all_out_boss/pic_worldboss_info_picture_06.png"></td>
                           <th>生命</th>
-                          <th></th>
-                          <th></th>
-                          <th></th>
+                          <th>120,000</th>
+                          <th>120,000</th>
+                          <th>?</th>
                         </tr>
                         <tr class="td-default">
                           <th>速度</th>
-                          <th></th>
-                          <th></th>
-                          <th></th>
+                          <th>?</th>
+                          <th>?</th>
+                          <th>?</th>
                         </tr>
                         <tr class="td-default">
                           <th>防禦</th>
-                          <th></th>
-                          <th></th>
-                          <th></th>
+                          <th>?</th>
+                          <th>?</th>
+                          <th>?</th>
                         </tr>
                         <tr class="td-default">
                           <th>狀態抵抗</th>
-                          <th></th>
-                          <th></th>
-                          <th></th>
+                          <th>80%</th>
+                          <th>?</th>
+                          <th>?</th>
                         </tr>
                         <tr class="td-default h:75px">
                           <th>免疫效果</th>
-                          <th></th>
-                          <th></th>
-                          <th></th>
+                          <th>當機 挑釁 暈眩<br>
+                            腐蝕 技能干擾<br>
+                            不可強化</th>
+                          <th>?</th>
+                          <th>?</th>
                         </tr>
                         <tr class="td-default h:60px">
                           <th colspan="4" class="t:left">免疫冷卻時間延長</th>
@@ -1524,7 +1567,10 @@
                       <tbody>
                         <tr class="td-default">
                           <td colspan="2">
-                            共
+                            每經過一定回合，自身疊加提升攻擊力和速度，以及疊加減少自身受到行動條降低的效果。當玩家隊伍更換時，將重置該效果。<br>
+                            自身受到同類核心的角色攻擊時，減少<span class="skilltext-yellow">20%</span>傷害。而當被自身克制類核心的角色攻擊時，減少<span class="skilltext-yellow">30%</span>傷害。<br>
+                            受到攻擊產生偏斜時，傷害降低<span class="skilltext-yellow">30%</span>。<br>
+                            第5次生命值歸零後，改變自身技能的效果。
                           </td>
                         </tr>
                       </tbody>
@@ -1599,14 +1645,14 @@
                     </thead>
                     <thead class="th-default">
                       <tr class="h:35">
-                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_15016401.png"></th>
-                        <th>武藝至極</th>
-                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_15016402.png"></th>
-                        <th>飽和攻擊</th>
-                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_15016403.png"></th>
-                        <th>戰場清理</th>
+                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_2070017601.png"></th>
+                        <th>突破囹圄</th>
+                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_2070017602.png"></th>
+                        <th>專攻棄子</th>
+                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_2070017603.png"></th>
+                        <th>迭代計畫</th>
                         <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_common_005.png"></th>
-                        <th>非法改造</th>
+                        <th>非正常AG核心</th>
                       </tr>
                       <tr class="h:30">
                         <th>主動技能</th>
@@ -1617,17 +1663,25 @@
                       <tr class="h:30">
                         <th>-</th>
                         <th>CD：3回合</th>
-                        <th>CD：5回合</th>
+                        <th>CD：4回合</th>
                         <th>-</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr class="td-default">
-                        <td colspan="2">1</td>
-                        <td colspan="2">2</td>
-                        <td colspan="2">3</td>
+                        <td colspan="2">對全體敵方目標造成傷害，<span class="skilltext-yellow">根據目標減益數目提高傷害</span>。</td>
                         <td colspan="2">
-                          4</td>
+                          對單體敵方目標造成傷害，優先攻擊編隊<span class="skilltext-yellow">1</span>號位的目標。<br>
+                          攻擊非<span class="skilltext-purple">均衡型</span>的目標時增加<span class="skilltext-yellow">50%</span>傷害。</td>
+                        <td colspan="2">
+                          解除自身<span class="skilltext-blue">2</span>個減益狀態，賦予自身<span class="skilltext-blue">防禦力上升</span>和<span class="skilltext-blue">防護罩</span>狀態，持續<span class="skilltext-blue">2</span>回合。<br>
+                          自身處於防護罩狀態時，受到攻擊會使用「突破囹圄」進行反擊，每回合僅觸發<span class="skilltext-yellow">1</span>次。</td>
+                        <td colspan="2">
+                          自身回合結束時，輪流對<span class="skilltext-yellow">1~4</span>號位的敵方目標造成<span class="skilltext-red">眩暈</span>狀態，持續<span class="skilltext-red">1</span>回合。<br>
+                          自身受到的非暴擊技能攻擊傷害提升<span class="skilltext-yellow">50%</span>。<br>
+                          自身受到追加攻擊技能攻擊傷害提升<span class="skilltext-yellow">50%</span>。<br>
+                          敵方沒有<span class="skilltext-purple">強襲型</span>目標時，自身防禦力提升<span class="skilltext-yellow">30%</span>，每回合結束時刷新。<br>
+                          不受<span class="skilltext-yellow">最大生命值傷害加成</span>效果影響。</td>
                       </tr>
                     </tbody>
                     <thead>
@@ -1639,14 +1693,14 @@
                     </thead>
                     <thead class="th-default">
                       <tr class="h:35">
-                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_15016401.png"></th>
-                        <th>武藝至極</th>
-                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_15016402.png"></th>
-                        <th>飽和攻擊</th>
-                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_15016403.png"></th>
-                        <th>戰場清理</th>
+                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_2071017601.png"></th>
+                        <th>突破囹圄</th>
+                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_2071017602.png"></th>
+                        <th>專攻棄子</th>
+                        <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_2071017603.png"></th>
+                        <th>迭代計畫</th>
                         <th rowspan="3" class="skillbg"><img src="./img/arterygear/all_out_boss/spr_skillicon_common_005.png"></th>
-                        <th>非法改造</th>
+                        <th>非正常AG核心</th>
                       </tr>
                       <tr class="h:30">
                         <th>主動技能</th>
@@ -1663,11 +1717,22 @@
                     </thead>
                     <tbody>
                       <tr class="td-default">
-                        <td colspan="2">1</td>
-                        <td colspan="2">2</td>
-                        <td colspan="2">3</td>
                         <td colspan="2">
-                          4</td>
+                          對全體敵方目標造成傷害，擊退全體目標行動條<span class="skilltext-yellow">15%</span>對隨機<span class="skilltext-red">2</span>名目標造成<span class="skilltext-red">不可強化</span>狀態，持續<span class="skilltext-red">1</span>回合。。
+                        </td>
+                        <td colspan="2">
+                          對單體敵方目標造成傷害，優先攻擊編隊<span class="skilltext-yellow">1</span>號位的目標。<br>
+                          攻擊後若目柝生命值比例低於<span class="skilltext-yellow">50%</span>，則使用「突破囹圄」進行追加攻擊。<br>
+                        </td>
+                        <td colspan="2">對全體敵方目標造成傷害，解除全體目標<span class="skilltext-blue">1</span>個增益狀態，並對全體目標造成<span class="skilltext-red">攻擊力下降</span>狀態，持續 2 回台。賦予自身 攻擊力下降 狀態，持續 2 回合。<br>
+                          賦予自身<span class="skilltext-red">攻擊力下降</span>狀態，持續<span class="skilltext-red">2</span>回合。</td>
+                        <td colspan="2">
+                          自身回合結束時，輪流對<span class="skilltext-yellow">1~4</span>號位的敵方目標造成<span class="skilltext-red">眩暈</span>狀態，持續<span class="skilltext-red">1</span>回合。<br>
+                          自身受到的非暴擊技能攻擊傷害提升<span class="skilltext-yellow">50%</span>。<br>
+                          任意目標回合結束時，若自身處於當機、眩暈、技能干擾狀態，則解除對應狀態並使自身到下回台開始前，受到的傷害提升<span class="skilltext-yellow">50%</span> 。
+                          敵方沒有<span class="skilltext-purple">戰術型</span>目標時，自身防禦力提升<span class="skilltext-yellow">30%</span>，每回合結束時刷新。<br>
+                          不受<span class="skilltext-yellow">最大生命值傷害加成</span>效果影響。</td>
+                        </td>
                       </tr>
                     </tbody>
                       </table>
@@ -1899,11 +1964,11 @@
                         <td colspan="2">對全體敵方目標造成傷害，<span class="skilltext-yellow">根據自身增益狀態的數量提高傷害</span>，為自身清除<span class="skilltext-yellow">1</span>個增益狀態，若自身處於增益狀態，則強化為為自身清除<span class="skilltext-yellow">2</span>個增益狀態。	</td>
                         <td colspan="2">對全體敵方目標造成傷害，<span class="skilltext-yellow">根據自身增益狀態的數量提高傷害</span>，賦予自身固定<span class="skilltext-blue">25000</span>點的〈防護罩〉狀態，持續<span class="skilltext-blue">2</span>回合。若自身處於增益狀態，則強化為賦予自身固定<span class="skilltext-blue">50000</span>點的〈防護罩〉狀態。自身回合開始時，若自身仍處於防護罩狀態，為自身清除<span class="skilltext-yellow">全部</span>減益狀態，並賦予自身〈攻擊力大幅上升〉和〈暴擊率上升〉狀態，持續<span class="skilltext-blue">1</span>回合。	</td>
                         <td colspan="2">
-                          場上每<span class="skilltext-yellow">5</span>次回合結束時，若自身處於不可強化狀態，則為自身清除不可強化狀態；若自身不處於不可強化狀態，則賦予自身〈攻擊力上升〉〈暴擊傷害上升〉〈命中率上升〉〈防禦力上升〉〈狀態抗性上升〉〈免疫〉〈貫穿模組〉中的<span class="skilltext-blue">2</span>種，持續<span class="skilltext-blue">2</span>回合。
-                          自身處於增益狀態時，為自身提高<span class="skilltext-yellow">30%</span>防禦力，每回合結束時，刷新該效果。受到攻擊後，推進自身行動條<span class="skilltext-yellow">5%</span>，若此時自身處於增益狀態，則強化為推進自身行動條<span class="skilltext-yellow">10%</span>。
-                          自身受到攻擊時，會根據攻擊者的增益狀態數目為攻擊者增加傷害，每有1個增益狀態，傷害提升10%。
-                          敵方沒有<span class="skilltext-purple">強襲型</span>目標時，自身防禦力提升<span class="skilltext-yellow">30%</span>，每回合結束時刷新。
-                          不受<span class="skilltext-yellow">最大生命值傷害加成</span>效果影響。
+                          場上每<span class="skilltext-yellow">5</span>次回合結束時，若自身處於不可強化狀態，則為自身清除不可強化狀態；若自身不處於不可強化狀態，則賦予自身〈攻擊力上升〉〈暴擊傷害上升〉〈命中率上升〉〈防禦力上升〉〈狀態抗性上升〉〈免疫〉〈貫穿模組〉中的<span class="skilltext-blue">2</span>種，持續<span class="skilltext-blue">2</span>回合。<br>
+                          自身處於增益狀態時，為自身提高<span class="skilltext-yellow">30%</span>防禦力，每回合結束時，刷新該效果。受到攻擊後，推進自身行動條<span class="skilltext-yellow">5%</span>，若此時自身處於增益狀態，則強化為推進自身行動條<span class="skilltext-yellow">10%</span>。<br>
+                          自身受到攻擊時，會根據攻擊者的增益狀態數目為攻擊者增加傷害，每有1個增益狀態，傷害提升10%。<br>
+                          敵方沒有<span class="skilltext-purple">強襲型</span>目標時，自身防禦力提升<span class="skilltext-yellow">30%</span>，每回合結束時刷新。<br>
+                          不受<span class="skilltext-yellow">最大生命值傷害加成</span>效果影響。<br>
                           玩家更換隊伍時，為自身清除<span class="skilltext-yellow">全部</span>減益狀態。</td>
                       </tr>
                     </tbody>
@@ -1940,16 +2005,16 @@
                     </thead>
                     <tbody>
                       <tr class="td-default">
-                        <td colspan="2">1</td>
-                        <td colspan="2">2</td>
-                        <td colspan="2">3</td>
+                        <td colspan="2">對單體敵方目標造成傷害，<span class="skilltext-yellow">根據自身增益狀態的數量提高傷害</span>，對目標造成〈暴擊下降〉狀態，持續<span class="skilltext-red">2</span>回合。	</td>
+                        <td colspan="2">對全體敵方目標造成傷害，<span class="skilltext-yellow">根據自身增益狀態的數量提高傷害</span>，推進自身行動條<span class="skilltext-yellow">25%</span>，若自身處於增益狀態，則強化為推進自身行動條<span class="skilltext-yellow">40%</span>。	</td>
+                        <td colspan="2">對全體敵方目標造成傷害，<span class="skilltext-yellow">根據自身增益狀態的數量提高傷害</span>，賦予自身〈防禦力上升〉狀態，持續<span class="skilltext-blue">2</span>回合。若自身處於增益狀態，則強化為賦予自身〈防禦力大幅上升〉狀態，持續<span class="skilltext-blue">3</span>回合。	</td>
                         <td colspan="2">
-                          場上每5次回合結束時，若自身處於不可強化狀態，則為自身清除不可強化狀態；若自身不處於不可強化狀態，則賦予自身〈攻擊力上升〉〈暴擊傷害上升〉〈命中率上升〉〈防禦力上升〉〈狀態抗性上升〉〈免疫〉〈貫穿模組〉中的2種，持續2回合。<br>
-                          攻擊後若自身處於增益狀態，對目標造成追加傷害，追加傷害貫穿目標70%防禦力。受到攻擊後，推進自身行動條5%，若此時自身處於增益狀態，則強化為推進自身行動條10%。<br>
-                          自身受到攻擊時，會根據攻擊者的增益狀態數目為攻擊者增加傷害，每有1個增益狀態，傷害提升10%。<br>
-                          敵方沒有修復型目標時，自身防禦力提升30%，每回合結束時刷新。<br>
-                          不受最大生命值傷害加成效果影響。<br>
-                          玩家更換隊伍時，為自身清除全部減益狀態。</td>
+                          場上每<span class="skilltext-yellow">5</span>次回合結束時，若自身處於不可強化狀態，則為自身清除不可強化狀態；若自身不處於不可強化狀態，則賦予自身〈攻擊力上升〉〈暴擊傷害上升〉〈命中率上升〉〈防禦力上升〉〈狀態抗性上升〉〈免疫〉〈貫穿模組〉中的<span class="skilltext-blue">2</span>種，持續<span class="skilltext-blue">2</span>回合。<br>
+                          自身受到攻擊時若處於增益狀態，則使攻擊者的傷害提升量減少50%，所有傷害提升將會加減計算後一併生效，傷害提升可為負數。自身回合結束時，為自身清除防禦力下降狀態。<br>
+                          自身受到攻擊時，會根據攻擊者的增益狀態數目為攻擊者增加傷害，每有<span class="skilltext-yellow">1</span>個增益狀態，傷害提升<span class="skilltext-orange">10%</span>。<br>
+                          敵方沒有<span class="skilltext-purple">強襲型</span>目標時，自身防禦力提升<span class="skilltext-yellow">30%</span>，每回合結束時刷新。<br>
+                          不受<span class="skilltext-yellow">最大生命值傷害加成</span>效果影響。<br>
+                          玩家更換隊伍時，為自身清除<span class="skilltext-yellow">全部</span>減益狀態。</td>
                       </tr>
                     </tbody>
                       </table>
@@ -2161,16 +2226,16 @@
                     </thead>
                     <tbody>
                       <tr class="td-default">
-                        <td colspan="2">1</td>
-                        <td colspan="2">2</td>
-                        <td colspan="2">3</td>
+                        <td colspan="2">對單體敵方目標造成傷害，<span class="skilltext-yellow">根據自身增益狀態的數量提高傷害</span>，對目標造成〈防禦力下降〉狀態，持續<span class="skilltext-red">2</span>回合。</td>
+                        <td colspan="2">對全體敵方目標造成傷害，<span class="skilltext-yellow">根據自身增益狀態的數量提高傷害</span>，清除全體敵方目標<span class="skilltext-yellow">1</span>個增益狀態，若自身處於增益狀態，則強化為清除無全體敵方目標<span class="skilltext-yellow">2</span>個增益狀態。</td>
+                        <td colspan="2">對全體敵方目標造成傷害，<span class="skilltext-yellow">根據自身增益狀態的數量提高傷害</span>，若攻擊後存在生命低於40%的目標，則賦予自身〈攻擊力大幅上升〉狀態，持續<span class="skilltext-blue">1</span>回合。</td>
                         <td colspan="2">
                           場上每<span class="skilltext-yellow">5</span>次回合結束時，若自身處於不可強化狀態，則為自身清除不可強化狀態；若自身不處於不可強化狀態，則賦予自身〈攻擊力上升〉〈暴擊傷害上升〉〈命中率上升〉〈防禦力上升〉〈狀態抗性上升〉〈免疫〉〈貫穿模組〉中的<span class="skilltext-blue">2</span>種，持續<span class="skilltext-blue">2</span>回合。<br>
-                          攻擊後若自身處於增益狀態，對目標造成追加傷害，追加傷害貫穿目標70%防禦力。受到攻擊後，推進自身行動條5%，若此時自身處於增益狀態，則強化為推進自身行動條10%。<br>
-                          自身受到攻擊時，會根據攻擊者的增益狀態數目為攻擊者增加傷害，每有1個增益狀態，傷害提升10%。<br>
-                          敵方沒有修復型目標時，自身防禦力提升30%，每回合結束時刷新。<br>
-                          不受最大生命值傷害加成效果影響。<br>
-                          玩家更換隊伍時，為自身清除全部減益狀態。</td>
+                          攻擊後若自身處於增益狀態，對目標造成追加傷害，追加傷害<span class="skilltext-yellow">貫穿</span>目標<span class="skilltext-yellow">70%</span>防禦力。受到攻擊後，推進自身行動條<span class="skilltext-yellow">5%</span>，若此時自身處於增益狀態，則強化為推進自身行動條<span class="skilltext-yellow">10%</span>。<br>
+                          自身受到攻擊時，會根據攻擊者的增益狀態數目為攻擊者增加傷害，每有<span class="skilltext-yellow">1</span>個增益狀態，傷害提升<span class="skilltext-orange">10%</span>。<br>
+                          敵方沒有<span class="skilltext-purple">修復型</span>目標時，自身防禦力提升<span class="skilltext-yellow">30%</span>，每回合結束時刷新。<br>
+                          不受<span class="skilltext-yellow">最大生命值傷害加成</span>效果影響。<br>
+                          玩家更換隊伍時，為自身清除<span class="skilltext-yellow">全部</span>減益狀態。</td>
                       </tr>
                     </tbody>
                     <thead>
@@ -2206,16 +2271,16 @@
                     </thead>
                     <tbody>
                       <tr class="td-default">
-                        <td colspan="2">1</td>
-                        <td colspan="2">2</td>
-                        <td colspan="2">3</td>
+                        <td colspan="2">對單體敵方目標造成傷害，<span class="skilltext-yellow">根據自身增益狀態的數量提高傷害</span>，對目標造成〈速度下降〉狀態，持續<span class="skilltext-red">2</span>回合。</td>
+                        <td colspan="2">對全體敵方目標造成傷害，<span class="skilltext-yellow">根據自身增益狀態的數量提高傷害</span>，擊退全體敵方目標行動條<span class="skilltext-yellow">20%</span>，若自身處於增益狀態，則強化為擊退全體敵方目標行動條<span class="skilltext-yellow">30%</span>。</td>
+                        <td colspan="2">對全體敵方目標造成傷害，<span class="skilltext-yellow">貫穿</span>目標<span class="skilltext-yellow">30%</span>防禦力，<span class="skilltext-yellow">根據自身增益狀態的數量提高傷害</span>，使用「戰場清理」擊殺目標時，推進自身行動條<span class="skilltext-yellow">50%</span>。</td>
                         <td colspan="2">
-                          場上每5次回合結束時，若自身處於不可強化狀態，則為自身清除不可強化狀態；若自身不處於不可強化狀態，則賦予自身〈攻擊力上升〉〈暴擊傷害上升〉〈命中率上升〉〈防禦力上升〉〈狀態抗性上升〉〈免疫〉〈貫穿模組〉中的2種，持續2回合。<br>
-                          攻擊後若自身處於增益狀態，對目標造成追加傷害，追加傷害貫穿目標70%防禦力。受到攻擊後，推進自身行動條5%，若此時自身處於增益狀態，則強化為推進自身行動條10%。<br>
-                          自身受到攻擊時，會根據攻擊者的增益狀態數目為攻擊者增加傷害，每有1個增益狀態，傷害提升10%。<br>
-                          敵方沒有修復型目標時，自身防禦力提升30%，每回合結束時刷新。<br>
-                          不受最大生命值傷害加成效果影響。<br>
-                          玩家更換隊伍時，為自身清除全部減益狀態。</td>
+                          場上每<span class="skilltext-yellow">5</span>次回合結束時，若自身處於不可強化狀態，則為自身清除不可強化狀態；若自身不處於不可強化狀態，則賦予自身〈攻擊力上升〉〈暴擊傷害上升〉〈命中率上升〉〈防禦力上升〉〈狀態抗性上升〉〈免疫〉〈貫穿模組〉中的<span class="skilltext-blue">2</span>種，持續<span class="skilltext-blue">2</span>回合。<br>
+                          使用攻擊後若自身處於增益狀態，使用「飽和攻擊」進行追加攻擊，僅在自身主要階段觸發。自身回合結束時，為自身清除攻擊力下降狀態和命中率下降狀態。<br>
+                          自身受到攻擊時，會根據攻擊者的增益狀態數目為攻擊者增加傷害，每有<span class="skilltext-yellow">1</span>個增益狀態，傷害提升<span class="skilltext-orange">10%</span>。<br>
+                          敵方沒有<span class="skilltext-purple">戰術型</span>目標時，自身防禦力提升<span class="skilltext-yellow">30%</span>，每回合結束時刷新。<br>
+                          不受<span class="skilltext-yellow">最大生命值傷害加成</span>效果影響。<br>
+                          玩家更換隊伍時，為自身清除<span class="skilltext-yellow">全部</span>減益狀態。</td>
                       </tr>
                     </tbody>
                       </table>
@@ -2258,33 +2323,33 @@
                         <tr class="td-default">
                           <td rowspan="6" class=""><img src="./img/arterygear/all_out_boss/pic_worldboss_info_picture_09.png"></td>
                           <th>生命</th>
-                          <th></th>
-                          <th></th>
-                          <th></th>
+                          <th>?</th>
+                          <th>?</th>
+                          <th>?</th>
                         </tr>
                         <tr class="td-default">
                           <th>速度</th>
-                          <th></th>
-                          <th></th>
-                          <th></th>
+                          <th>?</th>
+                          <th>?</th>
+                          <th>?</th>
                         </tr>
                         <tr class="td-default">
                           <th>防禦</th>
-                          <th></th>
-                          <th></th>
-                          <th></th>
+                          <th>?</th>
+                          <th>?</th>
+                          <th>?</th>
                         </tr>
                         <tr class="td-default">
                           <th>狀態抵抗</th>
-                          <th></th>
-                          <th></th>
-                          <th></th>
+                          <th>?</th>
+                          <th>?</th>
+                          <th>?</th>
                         </tr>
                         <tr class="td-default h:75px">
                           <th>免疫效果</th>
-                          <th></th>
-                          <th></th>
-                          <th></th>
+                          <th>?</th>
+                          <th>?</th>
+                          <th>?</th>
                         </tr>
                         <tr class="td-default h:60px">
                           <th colspan="4" class="t:left">免疫冷卻時間延長</th>
@@ -2427,16 +2492,11 @@
                     </thead>
                     <tbody>
                       <tr class="td-default">
-                        <td colspan="2">1</td>
-                        <td colspan="2">2</td>
-                        <td colspan="2">3</td>
+                        <td colspan="2">-</td>
+                        <td colspan="2">-</td>
+                        <td colspan="2">-</td>
                         <td colspan="2">
-                          場上每5次回合結束時，若自身處於不可強化狀態，則為自身清除不可強化狀態；若自身不處於不可強化狀態，則賦予自身〈攻擊力上升〉〈暴擊傷害上升〉〈命中率上升〉〈防禦力上升〉〈狀態抗性上升〉〈免疫〉〈貫穿模組〉中的2種，持續2回合。<br>
-                          攻擊後若自身處於增益狀態，對目標造成追加傷害，追加傷害貫穿目標70%防禦力。受到攻擊後，推進自身行動條5%，若此時自身處於增益狀態，則強化為推進自身行動條10%。<br>
-                          自身受到攻擊時，會根據攻擊者的增益狀態數目為攻擊者增加傷害，每有1個增益狀態，傷害提升10%。<br>
-                          敵方沒有修復型目標時，自身防禦力提升30%，每回合結束時刷新。<br>
-                          不受最大生命值傷害加成效果影響。<br>
-                          玩家更換隊伍時，為自身清除全部減益狀態。</td>
+                          -</td>
                       </tr>
                     </tbody>
                     <thead>
@@ -2472,16 +2532,11 @@
                     </thead>
                     <tbody>
                       <tr class="td-default">
-                        <td colspan="2">1</td>
-                        <td colspan="2">2</td>
-                        <td colspan="2">3</td>
+                        <td colspan="2">-</td>
+                        <td colspan="2">-</td>
+                        <td colspan="2">-</td>
                         <td colspan="2">
-                          場上每5次回合結束時，若自身處於不可強化狀態，則為自身清除不可強化狀態；若自身不處於不可強化狀態，則賦予自身〈攻擊力上升〉〈暴擊傷害上升〉〈命中率上升〉〈防禦力上升〉〈狀態抗性上升〉〈免疫〉〈貫穿模組〉中的2種，持續2回合。<br>
-                          攻擊後若自身處於增益狀態，對目標造成追加傷害，追加傷害貫穿目標70%防禦力。受到攻擊後，推進自身行動條5%，若此時自身處於增益狀態，則強化為推進自身行動條10%。<br>
-                          自身受到攻擊時，會根據攻擊者的增益狀態數目為攻擊者增加傷害，每有1個增益狀態，傷害提升10%。<br>
-                          敵方沒有修復型目標時，自身防禦力提升30%，每回合結束時刷新。<br>
-                          不受最大生命值傷害加成效果影響。<br>
-                          玩家更換隊伍時，為自身清除全部減益狀態。</td>
+                          -</td>
                       </tr>
                     </tbody>
                       </table>
