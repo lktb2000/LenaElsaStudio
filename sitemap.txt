@@ -1,3 +1,4 @@
 https://lktb2000.github.io/LenaElsaStudio/ag0_char.tier.html
 https://lktb2000.github.io/LenaElsaStudio/ag1_version.process.html
 https://lktb2000.github.io/LenaElsaStudio/ag2_char.serch.list.html
+https://lktb2000.github.io/LenaElsaStudio/ag7_all.out.battle.skill.html
