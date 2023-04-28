@@ -85,12 +85,17 @@
   .td-default {
     background-color: rgba(235, 235, 235, 0.8);
   }
+
   .darkth-default {
     background-color: rgba(65, 65, 65, 0.9); color: #d6d6d6;
   }
-  .darktd-default {
-    background-color: rgba(87, 87, 87, 0.9); color: #d6d6d6;
+  .darkth2-default {
+    background-color: rgba(78, 78, 78, 0.9); color: #d6d6d6;
   }
+  .darktd-default {
+    background-color: rgba(93, 93, 93, 0.9); color: #d6d6d6;
+  }
+  
   .h3t {
     background-image: linear-gradient(to right,rgba(192, 192, 192, 0.4),rgba(192, 192, 192, 0.1),rgba(192, 192, 192, 0),rgba(192, 192, 192, 0),rgba(192, 192, 192, 0));
   }
@@ -122,7 +127,26 @@
   .skilltext-purple {
     color: #db65ff; font-weight: bolder;
   }
+  .skilltext-tip {
+    color: #97ffd5;
+  }
   
+  .flssrbg {
+    background-image: linear-gradient(to bottom,#ffeabc,#ffc445);
+  }
+  .flsrbg {
+    background-image: linear-gradient(to bottom,#e0b7ff,#d969f0);
+  }
+  .flrbg {
+    background-image: linear-gradient(to bottom,#ddf0ff,#5cabec);
+  }
+  .flnbg {
+    background-image: linear-gradient(to bottom,#daffd6,#5dd376);
+  }
+  .flwbg {
+    background-image: linear-gradient(to bottom,#b3b7c0,#797b81);
+  }
+
   .ssr {
     background-color: #fff2cc;
   }
@@ -132,6 +156,9 @@
   .r {
     background-color: #D2E9FF;
   }
+  .n {
+    background-color: #daffd6;
+  }
   .ssrheader {
     background-color: #ffe599;
   }
@@ -140,6 +167,9 @@
   }
   .rheader {
     background-color: #ACD6FF;
+  }
+  .nheader {
+    background-color: #b7ffaf;
   }
   .header {
     background-color: #ffcf4f;
