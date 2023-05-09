@@ -14,7 +14,7 @@
   overflow: hidden;
   }
  .ur {
-    background-image: linear-gradient(to right,#FFC1E0,#FFA6FF,#B9B9FF,#C4E1FF);
+    background-image: linear-gradient(to top,#ffb9e8,#b3d1ff);
   }
   .urt {
     background-image: linear-gradient(to right,#FFC1E0,#FFA6FF,#B9B9FF,#C4E1FF);
@@ -31,6 +31,7 @@
   .nt {
     background-image: linear-gradient(to right,#adadad,#e2e2e2);
   }
+
   .super {
     color: #ff359a;
   }
@@ -41,7 +42,7 @@
     color: #921AFF;
   }
   .factor {
-    color: #17bbad;
+    color: #00afa1;
   }
   .bouns {
     color: #EA7500;
@@ -49,6 +50,7 @@
   .fb {
     font-weight: bolder;
   }
+  
   .white-header {
     background-color: #f6f6f8;
   }
