@@ -66,7 +66,7 @@
                   </td>
                   <td>
                     <div class="w:max bl:5|solid|#797979 bl:5|solid|#3C3C3C@dark mr:15 bg:linear-gradient(to|right,rgba(200,200,200,0.7),rgba(170,170,170,0.7)) bg:linear-gradient(to|right,rgba(246,246,248,0.7),rgba(214,214,214,0.7))@dark f:black p:8|14 lh:1.6 f:18">
-                      最新更新日期：2023 04/29
+                      最新更新日期：2023 05/24
                     </div>
                   </td>
                 </tr>
@@ -2328,7 +2328,7 @@
                         <tr class="darktd-default">
                           <td rowspan="6" class=""><img src="./img/arterygear/all_out_boss/pic_worldboss_info_picture_09.png"></td>
                           <th>生命</th>
-                          <th>?</th>
+                          <th>120,000</th>
                           <th>?</th>
                           <th>?</th>
                         </tr>
@@ -2346,13 +2346,14 @@
                         </tr>
                         <tr class="darktd-default">
                           <th>狀態抵抗</th>
-                          <th>?</th>
+                          <th>60%</th>
                           <th>?</th>
                           <th>?</th>
                         </tr>
                         <tr class="darktd-default h:75px">
                           <th>免疫效果</th>
-                          <th>?</th>
+                          <th>當機 挑釁 暈眩<br>
+                            腐蝕 技能干擾</th>
                           <th>?</th>
                           <th>?</th>
                         </tr>
@@ -2431,7 +2432,7 @@
                       <tbody>
                         <tr class="darktd-default">
                           <td colspan="2" class="t:left">
-                            出戰戰姬攻擊後，為自身恢復<span class="skilltext-green">5%</span>已損失生命值的血量。<br>
+                            出戰戰姬攻擊後，為自身恢復<span class="skilltext-green">12%</span>已損失生命值的血量。<br>
                             出戰戰姬攻擊後，若能量值不為<span class="skilltext-yellow">0</span>，則增加自身<span class="skilltext-yellow">10</span>能量值。
                           </td>
                         </tr>
@@ -2497,11 +2498,16 @@
                     </thead>
                     <tbody>
                       <tr class="darktd-default">
-                        <td colspan="2">-</td>
-                        <td colspan="2">-</td>
-                        <td colspan="2">-</td>
+                        <td colspan="2">對單體敵方目標造成傷害，<span class="skilltext-yellow">根據自身增益狀態的數量提高傷害</span>，對目標造成〈不可恢復〉狀態，持續<span class="skilltext-red">2</span>回合。</td>
+                        <td colspan="2">對全體敵方目標造成傷害，<span class="skilltext-yellow">根據自身增益狀態的數量提高傷害</span>，清除全體敵方目標<span class="skilltext-yellow">1</span>個增益狀態，若自身處於增益狀態，則強化為清除無全體敵方目標<span class="skilltext-yellow">2</span>個增益狀態。</td>
+                        <td colspan="2">對全體敵方目標造成傷害，<span class="skilltext-yellow">根據自身增益狀態的數量提高傷害</span>，清除全體敵方目標<span class="skilltext-yellow">1</span>個增益狀態，其後對全體目標造成〈速度下降〉和〈束縛〉狀態，持續<span class="skilltext-red">2</span>回合。</td>
                         <td colspan="2">
-                          -</td>
+                          場上每<span class="skilltext-yellow">5</span>次回合結束時，若自身處於不可強化狀態，則為自身清除不可強化狀態；若自身不處於不可強化狀態，則賦予自身〈攻擊力上升〉〈暴擊傷害上升〉〈命中率上升〉〈防禦力上升〉〈狀態抗性上升〉〈免疫〉〈貫穿模組〉中的<span class="skilltext-blue">2</span>種，持續<span class="skilltext-blue">2</span>回合。<br>
+                          自身處於增益狀態時，為自身提高<span class="skilltext-yellow">30%</span>速度及<span class="skilltext-yellow">50%</span>狀態命中，每回合結束時刷新該效果。受到攻擊後，推進自身行動條<span class="skilltext-yellow">5%</span>，若此時自身處於增益狀態，則強化為推進自身行動條<span class="skilltext-yellow">10%</span>。<br>
+                          自身受到攻擊時，會根據攻擊者的增益狀態數目為攻擊者增加傷害，每有<span class="skilltext-yellow">1</span>個增益狀態，傷害提升<span class="skilltext-orange">10%</span>，同時若自身受到攻擊傷害高於<span class="skilltext-yellow">20000</span>點，則為自身清除<span class="skilltext-yellow">1</span>個增益狀態。<br>
+                          敵方沒有<span class="skilltext-purple">修復型</span>目標時，自身防禦力提升<span class="skilltext-yellow">30%</span>，每回合結束時刷新。<br>
+                          <span class="skilltext-yellow">不受最大生命值傷害加成</span>效果影響。<span class="skilltext-yellow">自身狂暴一定回合後，使自身所有技能得到強化</span>。<br>
+                          玩家更換隊伍時，為自身清除<span class="skilltext-yellow">全部</span>減益狀態。</td>
                       </tr>
                     </tbody>
                     <thead>
@@ -2537,11 +2543,16 @@
                     </thead>
                     <tbody>
                       <tr class="darktd-default">
-                        <td colspan="2">-</td>
-                        <td colspan="2">-</td>
-                        <td colspan="2">-</td>
+                        <td colspan="2">對單體敵方目標造成傷害，<span class="skilltext-yellow">根據自身增益狀態的數量提高傷害</span>，對目標造成〈不可恢復〉狀態，持續<span class="skilltext-red">2</span>回合。</td>
+                        <td colspan="2">對全體敵方目標造成傷害，<span class="skilltext-yellow">根據自身增益狀態的數量提高傷害</span>，擊退全體敵方目標行動條<span class="skilltext-yellow">15%</span>，若自身處於增益狀態，則強化為擊退全體敵方目標行動條<span class="skilltext-yellow">25%</span>。</td>
+                        <td colspan="2">對全體敵方目標造成傷害，<span class="skilltext-yellow">根據自身增益狀態的數量提高傷害</span>，清除全體敵方目標<span class="skilltext-yellow">1</span>個增益狀態，自身處於增益狀態時，縮短所有技能冷卻時間<span class="skilltext-blue">2</span>回合。</td>
                         <td colspan="2">
-                          -</td>
+                          場上每<span class="skilltext-yellow">5</span>次回合結束時，若自身處於不可強化狀態，則為自身清除不可強化狀態；若自身不處於不可強化狀態，則賦予自身〈攻擊力上升〉〈暴擊傷害上升〉〈命中率上升〉〈防禦力上升〉〈狀態抗性上升〉〈免疫〉〈貫穿模組〉中的<span class="skilltext-blue">2</span>種，持續<span class="skilltext-blue">2</span>回合。<br>
+                          使用攻擊或受到攻擊後若處於增益狀態，使用<span class="skilltext-yellow">「飽和攻擊」</span>進行追加攻擊，自身每回合僅可觸發<span class="skilltext-yellow">1</span>次。自身回合結束時，為自身清除速度下降狀態。<br>
+                          自身受到攻擊時，會根據攻擊者的增益狀態數目為攻擊者增加傷害，每有<span class="skilltext-yellow">1</span>個增益狀態，傷害提升<span class="skilltext-orange">10%</span>，同時若自身受到攻擊傷害高於<span class="skilltext-yellow">20000</span>點，則為自身清除<span class="skilltext-yellow">1</span>個增益狀態。<br>
+                          敵方沒有<span class="skilltext-purple">戰術型</span>目標時，自身防禦力提升<span class="skilltext-yellow">30%</span>，每回合結束時刷新。<br>
+                          <span class="skilltext-yellow">不受最大生命值傷害加成</span>效果影響。<span class="skilltext-yellow">自身狂暴一定回合後，使自身所有技能得到強化</span>。<br>
+                          玩家更換隊伍時，為自身清除<span class="skilltext-yellow">全部</span>減益狀態。</td></td>
                       </tr>
                     </tbody>
                       </table>
