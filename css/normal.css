@@ -66,8 +66,9 @@
   .lvb {
     color: #BBFFBB; text-shadow:1px 1px 3px rgb(0,0,0) ;
   }
+
   .urt-1 {
-    background-image: linear-gradient(to right,#ffe1f0,#ffd0ff,#d9d9ff,#e1f0ff);
+    background-image: linear-gradient(to bottom,#cde7ff,#ffc5f1);
   }
   .urt-2 {
     background-image: linear-gradient(to right,#C4E1FF,#B9B9FF);
@@ -75,6 +76,7 @@
   .urt-3 {
     background-image: linear-gradient(to right,#B9B9FF,#ffb6ed);
   }
+
   .heal {
     color: #04a140;
   }
